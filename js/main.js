@@ -146,7 +146,7 @@ function submitAppointment() {
   // Build WhatsApp message
   const msg = `🌸 *Appointment Request – Mahek Beauty Parlour*\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n💄 Service: ${service}\n📅 Date: ${date}\n⏰ Time: ${time}\n🏡 Home Service: ${home === 'yes' ? 'Yes' : 'No'}\n📝 Notes: ${note || 'None'}`;
 
-  const waUrl = `https://wa.me/919876543210?text=${encodeURIComponent(msg)}`;
+  const waUrl = `https://wa.me/918200751953?text=${encodeURIComponent(msg)}`;
   window.open(waUrl, '_blank');
 
   // Show toast
