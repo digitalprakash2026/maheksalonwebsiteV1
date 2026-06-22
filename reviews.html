@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Mahek Beauty Parlour – Bhanvad City, Gujarat. Expert Bridal Makeup, Nail Art, Hair Styling, Facial, Wax, Designer Chaniyacholi & Wedding Outfits. Book your appointment today!" />
+  <meta name="keywords" content="beauty parlour bhanvad, bridal makeup gujarat, nail art bhanvad, hair styling, facial, wax, chaniyacholi, wedding outfit, Mahek Beauty Parlour, Dharmishtha Piprotar" />
+  <meta name="author" content="Mahek Beauty Parlour" />
+  <meta property="og:title" content="Mahek Beauty Parlour – Bhanvad, Gujarat" />
+  <meta property="og:description" content="Premium Beauty Services & Designer Outfits in Bhanvad City, Gujarat" />
+  <meta property="og:type" content="website" />
+  <title>Reviews | Mahek Beauty Parlour</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<!-- ==================== TOPBAR ==================== -->
+<div class="topbar d-none d-md-block">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-0">
+        <i class="fas fa-phone-alt me-2" style="color:var(--gold-light)"></i>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <span class="divider">|</span>
+        <i class="fas fa-map-marker-alt me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Bhanvad City, Gujarat, India" data-gu="ભાણવડ સિટી, ગુજરાત, ભારત">Bhanvad City, Gujarat, India</span>
+        <span class="divider">|</span>
+        <i class="fas fa-clock me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Mon–Sat: 9AM – 8PM" data-gu="સોમ–શનિ: સવારે ૯ – સાંજે ૮">Mon–Sat: 9AM – 8PM</span>
+      </div>
+      <div class="lang-switch">
+        <span style="color:rgba(255,255,255,0.5);font-size:0.75rem;margin-right:4px">
+          <i class="fas fa-globe me-1"></i>
+        </span>
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar-custom" id="mainNav">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <a href="index.html" class="navbar-brand-wrap">
+        <div class="brand-logo-circle">🌸</div>
+        <div>
+          <div class="brand-text-main" data-en="Mahek Beauty Parlour" data-gu="મહેક બ્યૂટી પાર્લર">Mahek Beauty Parlour</div>
+          <div class="brand-text-sub" data-en="Premium Beauty & Bridal" data-gu="પ્રીમિયમ બ્યૂટી & બ્રાઇડલ">Premium Beauty & Bridal</div>
+        </div>
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" onclick="toggleNav()">
+        <i class="fas fa-bars" id="navIcon" style="color:var(--rose);font-size:1.3rem"></i>
+      </button>
+      <div class="d-none d-lg-flex align-items-center gap-1" id="navLinks">
+        <a href="index.html" class="nav-link-custom" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="about.html" class="nav-link-custom" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="services.html" class="nav-link-custom" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="gallery.html" class="nav-link-custom" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="outfits.html" class="nav-link-custom" data-en="Outfits" data-gu="ઉત્પ" >Outfits</a>
+        <a href="reviews.html" class="nav-link-custom" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="faq.html" class="nav-link-custom" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="appointment.html" class="btn-rose ms-2" style="padding:10px 22px;border-radius:50px;font-size:0.84rem;font-weight:600" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+      </div>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobileNav" style="display:none;padding-top:16px;padding-bottom:8px;border-top:1px solid var(--border);margin-top:14px">
+      <div class="d-flex flex-column gap-1">
+        <a href="index.html" class="nav-link-custom" onclick="closeNav()" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="about.html" class="nav-link-custom" onclick="closeNav()" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="services.html" class="nav-link-custom" onclick="closeNav()" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="gallery.html" class="nav-link-custom" onclick="closeNav()" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="outfits.html" class="nav-link-custom" onclick="closeNav()" data-en="Outfits" data-gu="ઉત્પ">Outfits</a>
+        <a href="reviews.html" class="nav-link-custom" onclick="closeNav()" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="faq.html" class="nav-link-custom" onclick="closeNav()" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="appointment.html" class="btn-rose text-center mt-2" onclick="closeNav()" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+        <div class="d-flex gap-2 mt-2">
+          <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+          <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== REVIEWS ==================== -->
+<section id="reviews" class="section-pad bg-blush">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Customer Reviews" data-gu="​​Customer Reviews">Customer Reviews</span></div>
+      <h2 class="section-title" data-en="What Our <span style='color:var(--rose)'>Clients</span> Say" data-gu="​​What Our <span style='color:var(--rose)'>Clients</span> Say">
+        What Our <span style="color:var(--rose)">Clients</span> Say
+      </h2>
+      <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+        <div style="color:var(--gold-light);font-size:1.3rem">⭐⭐⭐⭐⭐</div>
+        <span style="font-weight:700;font-size:1.1rem;color:var(--dark)">4.9 / 5</span>
+        <span style="color:var(--muted);font-size:0.9rem">(120+ Reviews)</span>
+      </div>
+    </div>
+
+    <div class="swiper review-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <!-- Review 1 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="My bridal look was absolutely stunning! Dharmishtha ben created exactly what I had dreamed of. All my wedding guests couldn't stop complimenting me. Best parlour in Bhanvad, no doubt!" data-gu="​​My bridal look was absolutely stunning!">My bridal look was absolutely stunning! Dharmishtha ben created exactly what I had dreamed of. All my wedding guests couldn't stop complimenting me. Best parlour in Bhanvad, no doubt!</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">P</div>
+              <div>
+                <div class="reviewer-name">Priya Mer</div>
+                <div class="reviewer-loc">Bhanvad City</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="Got my Chaniyacholi from Mahek and the bridal makeup done too. Everything was perfect! The team is so caring and skilled. The outfit was exactly as I wanted." data-gu="​​Got my Chaniyacholi from Mahek and bridal makeup done.">Got my Chaniyacholi from Mahek and the bridal makeup done too. Everything was perfect! The team is so caring and skilled. The outfit was exactly as I wanted.</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">K</div>
+              <div>
+                <div class="reviewer-name">Kiran Gohel</div>
+                <div class="reviewer-loc">Dwarka</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="My nail art was so unique and beautiful! Totally worth every rupee. Very hygienic place and the staff is extremely friendly. Will definitely come back again!" data-gu="​​My nail art was so unique and beautiful!">My nail art was so unique and beautiful! Totally worth every rupee. Very hygienic place and the staff is extremely friendly. Will definitely come back again!</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">S</div>
+              <div>
+                <div class="reviewer-name">Shreya Joshi</div>
+                <div class="reviewer-loc">Jamnagar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 4 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="Excellent facial service! My skin glowed after the gold facial. Dharmishtha ji is very skilled and knowledgeable. I go there every month now for skin care." data-gu="​​Excellent facial service! My skin glowed after the gold facial.">Excellent facial service! My skin glowed after the gold facial. Dharmishtha ji is very skilled and knowledgeable. I go there every month now for skin care.</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">R</div>
+              <div>
+                <div class="reviewer-name">Rekha Parmar</div>
+                <div class="reviewer-loc">Bhanvad City</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 5 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="Got hair straightening done and the results are amazing — completely frizz free and glossy! Very reasonable prices and very professional. Highly recommended." data-gu="​​Got hair straightening done and the results are amazing.">Got hair straightening done and the results are amazing — completely frizz free and glossy! Very reasonable prices and very professional. Highly recommended.</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">N</div>
+              <div>
+                <div class="reviewer-name">Nita Rabari</div>
+                <div class="reviewer-loc">Khambhalia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="brand-logo-circle" style="width:48px;height:48px;font-size:1.2rem">🌸</div>
+          <div>
+            <div class="brand-text-main" style="color:white">Mahek Beauty Parlour</div>
+            <div class="brand-text-sub" style="color:var(--gold-light)">Premium Beauty & Bridal</div>
+          </div>
+        </div>
+        <p class="footer-desc" data-en="Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day." data-gu="​​Your premium beauty destination in Bhanvad.">Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919876543210" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Quick Links" data-gu="​​Quick Links">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i><span data-en="Home" data-gu="​​Home">Home</span></a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i><span data-en="About Us" data-gu="​​About Us">About Us</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Services" data-gu="​​Services">Services</span></a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i><span data-en="Gallery" data-gu="​​Gallery">Gallery</span></a></li>
+          <li><a href="outfits.html"><i class="fas fa-chevron-right"></i><span data-en="Outfits" data-gu="​​Outfits">Outfits</span></a></li>
+          <li><a href="reviews.html"><i class="fas fa-chevron-right"></i><span data-en="Reviews" data-gu="​​Reviews">Reviews</span></a></li>
+          <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+          <li><a href="appointment.html"><i class="fas fa-chevron-right"></i><span data-en="Book Now" data-gu="​​Book Now">Book Now</span></a></li>
+        </ul>
+      </div>
+      <!-- Services -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Services" data-gu="​​Services">Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Nail Art" data-gu="​​Nail Art">Nail Art</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Hair Straightening" data-gu="​​Hair Straightening">Hair Straightening</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Facial" data-gu="​​Facial">Facial</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Shinar" data-gu="​​Shinar">Shinar</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Waxing" data-gu="​​Waxing">Waxing</span></a></li>
+          <li><a href="outfits.html"><i class="fas fa-chevron-right"></i><span data-en="Designer Outfits" data-gu="​​Designer Outfits">Designer Outfits</span></a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-6">
+        <h6 data-en="Contact Us" data-gu="​​Contact Us">Contact Us</h6>
+        <ul class="footer-contact list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-en="Mahek Beauty Parlour, Main Bazar, Bhanvad City, Devbhumi Dwarka, Gujarat – 361 001" data-gu="​​Main Bazar, Bhanvad City, Gujarat">Mahek Beauty Parlour, Main Bazar, Bhanvad City, Devbhumi Dwarka, Gujarat – 361 001</span>
+          </li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+919876543210" style="color:rgba(255,255,255,0.6)">+91 98765 43210</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919876543210" style="color:rgba(255,255,255,0.6)">WhatsApp Us</a></li>
+          <li><i class="fas fa-clock"></i> <span data-en="Mon–Sat: 9AM–8PM | Sun: 10AM–6PM" data-gu="​​Mon–Sat: 9–8 | Sun: 10–6">Mon–Sat: 9AM–8PM | Sun: 10AM–6PM</span></li>
+        </ul>
+        <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-gold" style="padding:11px 28px;font-size:0.86rem">
+          <i class="fab fa-whatsapp me-2"></i><span data-en="Book via WhatsApp" data-gu="​​WhatsApp ​​par Book">Book via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span data-en="© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat." data-gu="​​© 2025 Mahek Beauty Parlour. All rights reserved.">© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== WHATSAPP FLOAT ==================== -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip" data-en="Chat with us!" data-gu="​​Chat with us!">Chat with us!</div>
+  <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20inquire%20about%20your%20services." target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery" />
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#000;border:none;border-radius:16px;overflow:hidden">
+      <div class="modal-header" style="border:none;padding:10px 16px">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="stopVideo()"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div style="position:relative;padding-bottom:56.25%">
+          <iframe id="videoFrame" src="" style="position:absolute;inset:0;width:100%;height:100%;border:none" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="custom-toast" id="customToast">
+  <div class="toast-icon check-anim"><i class="fas fa-check"></i></div>
+  <div class="toast-text">
+    <div class="toast-title" data-en="Appointment Sent! 🎉" data-gu="​​Appointment Sent! 🎉">Appointment Sent! 🎉</div>
+    <div class="toast-msg" data-en="We'll confirm via WhatsApp/Call within 1 hour." data-gu="​​We'll confirm within 1 hour.">We'll confirm via WhatsApp/Call within 1 hour.</div>
+  </div>
+</div>
+
+
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
