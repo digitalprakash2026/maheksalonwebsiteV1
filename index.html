@@ -1,0 +1,1955 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Mahek Beauty Parlour – Bhanvad City, Gujarat. Expert Bridal Makeup, Nail Art, Hair Styling, Facial, Wax, Designer Chaniyacholi & Wedding Outfits. Book your appointment today!" />
+  <meta name="keywords" content="beauty parlour bhanvad, bridal makeup gujarat, nail art bhanvad, hair styling, facial, wax, chaniyacholi, wedding outfit, Mahek Beauty Parlour, Dharmishtha Piprotar" />
+  <meta name="author" content="Mahek Beauty Parlour" />
+  <meta property="og:title" content="Mahek Beauty Parlour – Bhanvad, Gujarat" />
+  <meta property="og:description" content="Premium Beauty Services & Designer Outfits in Bhanvad City, Gujarat" />
+  <meta property="og:type" content="website" />
+  <title>Mahek Beauty Parlour | Bhanvad, Gujarat</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet" />
+
+  <style>
+    /* ==================== CSS VARIABLES ==================== */
+    :root {
+      --rose:     #C8415B;
+      --rose-light: #E8718A;
+      --gold:     #B8860B;
+      --gold-light: #D4AF37;
+      --champagne:#FAF0DC;
+      --blush:    #FDF1F4;
+      --deep:     #1A0A10;
+      --dark:     #2D1520;
+      --text:     #4A2535;
+      --muted:    #8A6070;
+      --white:    #FFFFFF;
+      --border:   rgba(200,65,91,0.18);
+      --shadow:   0 12px 48px rgba(26,10,16,0.14);
+      --shadow-sm:0 4px 20px rgba(26,10,16,0.09);
+      --radius:   16px;
+      --radius-sm:10px;
+      --transition: all 0.36s cubic-bezier(.4,0,.2,1);
+    }
+
+    /* ==================== BASE ==================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Jost', sans-serif;
+      color: var(--text);
+      background: var(--white);
+      overflow-x: hidden;
+    }
+    h1,h2,h3,h4,h5 { font-family: 'Playfair Display', serif; color: var(--dark); }
+    p { font-family: 'Jost', sans-serif; line-height: 1.8; color: var(--text); }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; }
+    section { position: relative; }
+
+    /* ==================== UTILITIES ==================== */
+    .section-pad { padding: 90px 0; }
+    .section-pad-sm { padding: 60px 0; }
+    .bg-blush { background: var(--blush); }
+    .bg-deep  { background: var(--deep); }
+    .text-rose { color: var(--rose); }
+    .text-gold { color: var(--gold-light); }
+    .gold-line {
+      display: inline-block;
+      width: 60px; height: 2px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-light));
+      border-radius: 2px;
+    }
+
+    .section-tag {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 2.5px;
+      text-transform: uppercase; color: var(--rose);
+      margin-bottom: 14px;
+    }
+    .section-title {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .section-subtitle {
+      font-size: 1.05rem; color: var(--muted); max-width: 540px;
+    }
+
+    /* ==================== BUTTONS ==================== */
+    .btn-rose {
+      background: linear-gradient(135deg, var(--rose), #a53048);
+      color: var(--white); border: none; padding: 14px 36px;
+      border-radius: 50px; font-weight: 600; font-size: 0.92rem;
+      letter-spacing: 0.5px; transition: var(--transition);
+      box-shadow: 0 6px 24px rgba(200,65,91,0.38);
+    }
+    .btn-rose:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(200,65,91,0.52);
+      color: var(--white);
+    }
+    .btn-outline-rose {
+      border: 2px solid var(--rose); color: var(--rose);
+      padding: 12px 32px; border-radius: 50px;
+      font-weight: 600; font-size: 0.92rem;
+      transition: var(--transition); background: transparent;
+    }
+    .btn-outline-rose:hover {
+      background: var(--rose); color: white;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(200,65,91,0.32);
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      color: var(--white); border: none; padding: 14px 36px;
+      border-radius: 50px; font-weight: 600; font-size: 0.92rem;
+      transition: var(--transition);
+      box-shadow: 0 6px 24px rgba(184,134,11,0.38);
+    }
+    .btn-gold:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(184,134,11,0.52);
+      color: var(--white);
+    }
+
+    /* ==================== TOPBAR ==================== */
+    .topbar {
+      background: var(--deep);
+      padding: 8px 0;
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.75);
+    }
+    .topbar a { color: var(--gold-light); transition: var(--transition); }
+    .topbar a:hover { color: white; }
+    .topbar .divider { margin: 0 14px; opacity: 0.3; }
+
+    /* Language Switcher */
+    .lang-switch { display: flex; align-items: center; gap: 6px; }
+    .lang-btn {
+      background: none; border: 1px solid rgba(212,175,55,0.4);
+      color: var(--gold-light); padding: 2px 10px; border-radius: 20px;
+      font-size: 0.75rem; cursor: pointer; transition: var(--transition);
+      font-family: 'Jost', sans-serif;
+    }
+    .lang-btn.active, .lang-btn:hover {
+      background: var(--gold-light); color: var(--deep);
+    }
+
+    /* ==================== NAVBAR ==================== */
+    .navbar-custom {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(16px);
+      padding: 14px 0;
+      box-shadow: 0 2px 24px rgba(26,10,16,0.09);
+      transition: var(--transition);
+      position: sticky; top: 0; z-index: 1000;
+    }
+    .navbar-custom.scrolled {
+      padding: 8px 0;
+      box-shadow: 0 4px 32px rgba(26,10,16,0.14);
+    }
+    .navbar-brand-wrap { display: flex; align-items: center; gap: 14px; }
+    .brand-logo-circle {
+      width: 52px; height: 52px;
+      background: linear-gradient(135deg, var(--rose), #a53048);
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 1.4rem; color: white; box-shadow: 0 4px 16px rgba(200,65,91,0.4);
+      flex-shrink: 0;
+    }
+    .brand-text-main {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem; font-weight: 700; color: var(--dark);
+      line-height: 1.2;
+    }
+    .brand-text-sub {
+      font-size: 0.68rem; color: var(--muted); letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+    .nav-link-custom {
+      font-family: 'Jost', sans-serif;
+      font-size: 0.88rem; font-weight: 500; color: var(--text) !important;
+      padding: 6px 14px !important; border-radius: 6px;
+      transition: var(--transition); letter-spacing: 0.3px;
+    }
+    .nav-link-custom:hover, .nav-link-custom.active {
+      color: var(--rose) !important; background: rgba(200,65,91,0.07);
+    }
+    .navbar-toggler { border: none; padding: 4px; }
+    .navbar-toggler:focus { box-shadow: none; }
+
+    /* ==================== HERO SLIDER ==================== */
+    .hero-swiper { width: 100%; height: 100vh; min-height: 580px; max-height: 820px; }
+    .hero-slide {
+      position: relative; display: flex; align-items: center;
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background-size: cover; background-position: center;
+    }
+    .hero-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(120deg, rgba(26,10,16,0.72) 40%, rgba(200,65,91,0.18) 100%);
+    }
+    .hero-content { position: relative; z-index: 2; color: white; }
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(212,175,55,0.18); border: 1px solid rgba(212,175,55,0.45);
+      color: var(--gold-light); padding: 6px 18px; border-radius: 30px;
+      font-size: 0.78rem; font-weight: 600; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 22px;
+      backdrop-filter: blur(8px);
+    }
+    .hero-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      font-weight: 700; line-height: 1.18; color: white;
+      margin-bottom: 20px;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+    }
+    .hero-title em { color: var(--gold-light); font-style: italic; }
+    .hero-desc {
+      font-size: 1.08rem; color: rgba(255,255,255,0.82);
+      margin-bottom: 36px; max-width: 500px; line-height: 1.75;
+    }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 36px; }
+    .hero-badge {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25);
+      backdrop-filter: blur(8px);
+      color: white; padding: 7px 18px; border-radius: 30px;
+      font-size: 0.8rem; font-weight: 500;
+    }
+    .swiper-pagination-bullet { background: white; opacity: 0.5; width: 10px; height: 10px; }
+    .swiper-pagination-bullet-active { opacity: 1; background: var(--gold-light); transform: scale(1.3); }
+    .swiper-button-next, .swiper-button-prev {
+      color: white; background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px); width: 48px; height: 48px;
+      border-radius: 50%; border: 1px solid rgba(255,255,255,0.25);
+      transition: var(--transition);
+    }
+    .swiper-button-next:hover, .swiper-button-prev:hover { background: var(--rose); border-color: var(--rose); }
+    .swiper-button-next::after, .swiper-button-prev::after { font-size: 1rem; }
+
+    /* Hero decorative */
+    .hero-scroll-hint {
+      position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 6px;
+      color: rgba(255,255,255,0.6); font-size: 0.72rem; letter-spacing: 2px;
+      text-transform: uppercase; z-index: 10; cursor: pointer;
+      animation: bounce 2.4s ease-in-out infinite;
+    }
+    .hero-scroll-hint i { font-size: 1.1rem; }
+    @keyframes bounce { 0%,100%{transform:translateX(-50%) translateY(0)} 50%{transform:translateX(-50%) translateY(8px)} }
+
+    /* ==================== MARQUEE STRIP ==================== */
+    .marquee-strip {
+      background: linear-gradient(135deg, var(--rose), #a53048);
+      padding: 14px 0; overflow: hidden;
+    }
+    .marquee-track {
+      display: flex; gap: 0; animation: marquee 24s linear infinite;
+      white-space: nowrap;
+    }
+    .marquee-track span {
+      display: inline-flex; align-items: center; gap: 12px;
+      color: white; font-size: 0.88rem; font-weight: 500;
+      letter-spacing: 0.5px; padding-right: 48px;
+    }
+    .marquee-track span i { color: var(--gold-light); }
+    @keyframes marquee { 0%{transform:translateX(0)} 100%{transform:translateX(-50%)} }
+
+    /* ==================== ABOUT SECTION ==================== */
+    .about-img-wrap { position: relative; }
+    .about-img-main {
+      border-radius: 24px; overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .about-img-main img { width: 100%; height: 480px; object-fit: cover; display: block; }
+    .about-badge-float {
+      position: absolute; bottom: -24px; right: -24px;
+      background: white; border-radius: 20px; padding: 20px 26px;
+      box-shadow: var(--shadow); text-align: center;
+      border-left: 4px solid var(--rose);
+    }
+    .about-badge-float .num { font-family: 'Playfair Display', serif; font-size: 2.6rem; font-weight: 700; color: var(--rose); line-height: 1; }
+    .about-badge-float .lbl { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+    .about-decor-dot {
+      position: absolute; top: -18px; left: -18px;
+      width: 90px; height: 90px;
+      background: var(--blush); border-radius: 50%;
+      z-index: -1;
+    }
+    .about-list li {
+      display: flex; align-items: flex-start; gap: 12px;
+      margin-bottom: 14px; font-size: 0.96rem;
+    }
+    .about-list li i { color: var(--rose); margin-top: 4px; flex-shrink: 0; }
+    .owner-chip {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--blush); border-radius: 50px; padding: 10px 20px;
+      margin-top: 20px;
+    }
+    .owner-chip .owner-av {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      color: white; font-size: 1.1rem;
+    }
+    .owner-chip .owner-name { font-weight: 600; font-size: 0.9rem; color: var(--dark); }
+    .owner-chip .owner-role { font-size: 0.77rem; color: var(--muted); }
+
+    /* ==================== SERVICES ==================== */
+    .service-card {
+      background: white; border-radius: 20px; overflow: hidden;
+      box-shadow: var(--shadow-sm); transition: var(--transition);
+      border: 1px solid var(--border); height: 100%;
+    }
+    .service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--shadow);
+      border-color: rgba(200,65,91,0.35);
+    }
+    .service-icon-wrap {
+      height: 180px; display: flex; align-items: center; justify-content: center;
+      position: relative; overflow: hidden;
+    }
+    .service-icon-bg {
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--blush), var(--champagne));
+    }
+    .service-icon-circle {
+      width: 88px; height: 88px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose), #a53048);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2.2rem; color: white; position: relative; z-index: 1;
+      box-shadow: 0 8px 28px rgba(200,65,91,0.38);
+      transition: var(--transition);
+    }
+    .service-card:hover .service-icon-circle { transform: scale(1.1) rotate(-8deg); }
+    .service-body { padding: 24px; }
+    .service-body h5 { font-size: 1.18rem; margin-bottom: 10px; }
+    .service-body p { font-size: 0.9rem; color: var(--muted); margin-bottom: 18px; }
+    .service-price {
+      display: inline-block; background: var(--blush);
+      color: var(--rose); font-weight: 700; font-size: 0.88rem;
+      padding: 4px 14px; border-radius: 20px; margin-bottom: 14px;
+    }
+    .view-more-link {
+      display: inline-flex; align-items: center; gap: 6px;
+      color: var(--rose); font-weight: 600; font-size: 0.88rem;
+      transition: var(--transition);
+    }
+    .view-more-link:hover { gap: 10px; color: var(--gold); }
+
+    /* ==================== USP SECTION ==================== */
+    .usp-section { background: linear-gradient(135deg, var(--deep), #2D1520); }
+    .usp-card {
+      text-align: center; padding: 40px 28px;
+      border: 1px solid rgba(212,175,55,0.15);
+      border-radius: 20px; transition: var(--transition);
+      background: rgba(255,255,255,0.03);
+    }
+    .usp-card:hover {
+      border-color: rgba(212,175,55,0.45);
+      background: rgba(255,255,255,0.06);
+      transform: translateY(-6px);
+    }
+    .usp-icon-3d {
+      width: 80px; height: 80px; margin: 0 auto 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(212,175,55,0.2), rgba(200,65,91,0.2));
+      border: 1px solid rgba(212,175,55,0.3);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 2rem;
+      transition: var(--transition);
+      animation: float3d 3s ease-in-out infinite;
+    }
+    .usp-card:nth-child(2) .usp-icon-3d { animation-delay: 0.5s; }
+    .usp-card:nth-child(3) .usp-icon-3d { animation-delay: 1s; }
+    .usp-card:nth-child(4) .usp-icon-3d { animation-delay: 1.5s; }
+    .usp-card:hover .usp-icon-3d { transform: scale(1.15) rotateY(20deg); }
+    @keyframes float3d {
+      0%,100%{transform:translateY(0) rotateZ(0)}
+      50%{transform:translateY(-8px) rotateZ(3deg)}
+    }
+    .usp-card h5 { color: white; font-size: 1.1rem; margin-bottom: 10px; }
+    .usp-card p { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
+
+    /* ==================== GALLERY / BRIDAL ==================== */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .gallery-item {
+      border-radius: 16px; overflow: hidden; position: relative; cursor: pointer;
+      aspect-ratio: 3/4;
+    }
+    .gallery-item.tall { grid-row: span 2; aspect-ratio: auto; }
+    .gallery-item img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.5s cubic-bezier(.4,0,.2,1);
+      display: block;
+    }
+    .gallery-item:hover img { transform: scale(1.08); }
+    .gallery-overlay {
+      position: absolute; inset: 0; opacity: 0;
+      background: linear-gradient(to top, rgba(26,10,16,0.7), transparent);
+      transition: var(--transition); display: flex; align-items: flex-end;
+      padding: 20px;
+    }
+    .gallery-item:hover .gallery-overlay { opacity: 1; }
+    .gallery-overlay span { color: white; font-weight: 600; font-size: 0.9rem; }
+
+    /* Video cards */
+    .video-card {
+      border-radius: 20px; overflow: hidden; position: relative;
+      background: var(--deep); aspect-ratio: 16/9; cursor: pointer;
+    }
+    .video-thumb { width: 100%; height: 100%; object-fit: cover; opacity: 0.65; display: block; }
+    .video-play-btn {
+      position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    }
+    .video-play-btn .play-circle {
+      width: 68px; height: 68px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose), #a53048);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; color: white;
+      box-shadow: 0 0 0 0 rgba(200,65,91,0.6);
+      animation: pulse-play 2.2s infinite;
+      transition: var(--transition);
+    }
+    .video-card:hover .play-circle { transform: scale(1.12); }
+    @keyframes pulse-play {
+      0%{box-shadow:0 0 0 0 rgba(200,65,91,0.6)}
+      70%{box-shadow:0 0 0 22px rgba(200,65,91,0)}
+      100%{box-shadow:0 0 0 0 rgba(200,65,91,0)}
+    }
+
+    /* ==================== REVIEWS ==================== */
+    .review-swiper { padding-bottom: 48px !important; }
+    .review-card {
+      background: white; border-radius: 20px; padding: 32px 28px;
+      box-shadow: var(--shadow-sm); border: 1px solid var(--border);
+      transition: var(--transition); height: 100%;
+    }
+    .review-card:hover { box-shadow: var(--shadow); transform: translateY(-4px); }
+    .review-stars { color: var(--gold-light); font-size: 1.1rem; margin-bottom: 16px; }
+    .review-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.08rem; line-height: 1.7; color: var(--text);
+      margin-bottom: 22px; font-style: italic;
+    }
+    .reviewer { display: flex; align-items: center; gap: 14px; }
+    .reviewer-av {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: linear-gradient(135deg, var(--rose), var(--gold));
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; color: white; font-size: 1.1rem; flex-shrink: 0;
+    }
+    .reviewer-name { font-weight: 600; font-size: 0.95rem; color: var(--dark); }
+    .reviewer-loc { font-size: 0.78rem; color: var(--muted); }
+    .review-quote {
+      font-size: 4rem; line-height: 1; color: var(--blush);
+      font-family: 'Playfair Display', serif; float: left; margin-right: 6px; margin-top: -10px;
+      color: var(--rose); opacity: 0.25;
+    }
+
+    /* ==================== OUTFIT / CHANIYACHOLI ==================== */
+    .outfit-card {
+      border-radius: 20px; overflow: hidden; position: relative;
+      box-shadow: var(--shadow-sm); transition: var(--transition);
+    }
+    .outfit-card:hover { transform: translateY(-6px); box-shadow: var(--shadow); }
+    .outfit-card img { width: 100%; height: 320px; object-fit: cover; display: block; }
+    .outfit-label {
+      position: absolute; bottom: 0; left: 0; right: 0;
+      padding: 20px 22px;
+      background: linear-gradient(to top, rgba(26,10,16,0.85), transparent);
+    }
+    .outfit-label h6 { color: white; font-size: 1rem; margin-bottom: 4px; }
+    .outfit-label span { color: var(--gold-light); font-size: 0.8rem; }
+
+    /* ==================== APPOINTMENT ==================== */
+    .appointment-section {
+      background: linear-gradient(135deg, var(--blush), var(--champagne));
+    }
+    .appt-card {
+      background: white; border-radius: 24px; padding: 44px 40px;
+      box-shadow: var(--shadow);
+    }
+    .form-label-custom {
+      font-size: 0.83rem; font-weight: 600; color: var(--dark);
+      letter-spacing: 0.3px; margin-bottom: 6px; display: block;
+    }
+    .form-control-custom, .form-select-custom {
+      width: 100%; padding: 13px 18px; border: 1.5px solid var(--border);
+      border-radius: 12px; font-family: 'Jost', sans-serif;
+      font-size: 0.93rem; color: var(--text); outline: none;
+      transition: var(--transition); background: white;
+      appearance: none;
+    }
+    .form-control-custom:focus, .form-select-custom:focus {
+      border-color: var(--rose); box-shadow: 0 0 0 4px rgba(200,65,91,0.1);
+    }
+    .form-control-custom::placeholder { color: var(--muted); opacity: 0.7; }
+    textarea.form-control-custom { resize: vertical; min-height: 100px; }
+    .appt-info-card {
+      background: linear-gradient(135deg, var(--deep), #2D1520);
+      border-radius: 24px; padding: 40px 36px; height: 100%;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .appt-info-card h3 { color: white; }
+    .appt-info-list li {
+      display: flex; align-items: flex-start; gap: 14px;
+      color: rgba(255,255,255,0.75); font-size: 0.92rem;
+      margin-bottom: 20px; list-style: none;
+    }
+    .appt-info-list li i { color: var(--gold-light); margin-top: 3px; flex-shrink: 0; }
+    .appt-map-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: rgba(212,175,55,0.15); border: 1px solid rgba(212,175,55,0.35);
+      color: var(--gold-light); padding: 10px 22px; border-radius: 50px;
+      font-size: 0.84rem; font-weight: 600; transition: var(--transition);
+    }
+    .appt-map-btn:hover { background: var(--gold-light); color: var(--deep); }
+
+    /* ==================== FAQ ==================== */
+    .faq-accordion .accordion-item {
+      border: 1px solid var(--border); border-radius: var(--radius-sm) !important;
+      margin-bottom: 12px; overflow: hidden;
+    }
+    .faq-accordion .accordion-button {
+      font-family: 'Jost', sans-serif; font-weight: 600;
+      font-size: 0.97rem; color: var(--dark); background: white;
+      padding: 20px 24px; box-shadow: none !important;
+    }
+    .faq-accordion .accordion-button:not(.collapsed) {
+      color: var(--rose); background: var(--blush);
+    }
+    .faq-accordion .accordion-button::after {
+      filter: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23C8415B' fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    }
+    .faq-accordion .accordion-body {
+      font-size: 0.92rem; color: var(--muted); padding: 16px 24px 22px;
+      line-height: 1.75;
+    }
+
+    /* ==================== STATS ==================== */
+    .stats-section { background: linear-gradient(135deg, var(--rose), #8B2240); }
+    .stat-item { text-align: center; padding: 20px; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.2rem; font-weight: 700; color: white; line-height: 1;
+      margin-bottom: 6px;
+    }
+    .stat-label { color: rgba(255,255,255,0.8); font-size: 0.88rem; font-weight: 500; }
+
+    /* ==================== FOOTER ==================== */
+    .footer { background: var(--deep); padding: 70px 0 0; }
+    .footer-brand .brand-text-main { color: white; }
+    .footer-desc {
+      color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-top: 14px;
+      line-height: 1.8; max-width: 280px;
+    }
+    .footer h6 {
+      color: var(--gold-light); font-family: 'Jost', sans-serif;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; margin-bottom: 20px;
+    }
+    .footer-links { list-style: none; padding: 0; }
+    .footer-links li { margin-bottom: 10px; }
+    .footer-links li a {
+      color: rgba(255,255,255,0.6); font-size: 0.9rem;
+      transition: var(--transition); display: inline-flex; align-items: center; gap: 6px;
+    }
+    .footer-links li a:hover { color: var(--gold-light); padding-left: 4px; }
+    .footer-links li a i { font-size: 0.7rem; color: var(--rose); }
+    .footer-contact li {
+      display: flex; align-items: flex-start; gap: 12px;
+      color: rgba(255,255,255,0.6); font-size: 0.9rem; margin-bottom: 14px;
+      list-style: none;
+    }
+    .footer-contact li i { color: var(--gold-light); margin-top: 3px; flex-shrink: 0; }
+    .social-icons { display: flex; gap: 10px; margin-top: 22px; }
+    .social-icon {
+      width: 40px; height: 40px; border-radius: 50%;
+      border: 1px solid rgba(255,255,255,0.15);
+      display: flex; align-items: center; justify-content: center;
+      color: rgba(255,255,255,0.6); font-size: 0.95rem;
+      transition: var(--transition);
+    }
+    .social-icon:hover { background: var(--rose); border-color: var(--rose); color: white; transform: translateY(-3px); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      margin-top: 50px; padding: 22px 0;
+      color: rgba(255,255,255,0.4); font-size: 0.82rem;
+      text-align: center;
+    }
+    .footer-bottom a { color: var(--gold-light); }
+
+    /* ==================== WHATSAPP FLOAT ==================== */
+    .whatsapp-float {
+      position: fixed; bottom: 30px; right: 28px; z-index: 9999;
+    }
+    .whatsapp-btn {
+      width: 58px; height: 58px; border-radius: 50%;
+      background: #25D366; color: white; font-size: 1.7rem;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 6px 24px rgba(37,211,102,0.45);
+      transition: var(--transition); cursor: pointer;
+      border: none; text-decoration: none;
+      animation: wa-pulse 2.8s infinite;
+    }
+    .whatsapp-btn:hover { background: #1ebe5d; transform: scale(1.1); color: white; }
+    @keyframes wa-pulse {
+      0%,100%{box-shadow:0 6px 24px rgba(37,211,102,0.45)}
+      50%{box-shadow:0 6px 40px rgba(37,211,102,0.7), 0 0 0 8px rgba(37,211,102,0.12)}
+    }
+    .whatsapp-tooltip {
+      position: absolute; right: 70px; bottom: 10px;
+      background: white; color: var(--dark); padding: 8px 16px;
+      border-radius: 30px; font-size: 0.82rem; font-weight: 600;
+      white-space: nowrap; box-shadow: var(--shadow-sm);
+      opacity: 0; pointer-events: none; transition: var(--transition);
+    }
+    .whatsapp-float:hover .whatsapp-tooltip { opacity: 1; }
+
+    /* ==================== SCROLL TO TOP ==================== */
+    .scroll-top {
+      position: fixed; bottom: 100px; right: 28px; z-index: 9998;
+      width: 44px; height: 44px; border-radius: 50%;
+      background: var(--rose); color: white;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 16px rgba(200,65,91,0.4);
+      cursor: pointer; opacity: 0; pointer-events: none;
+      transition: var(--transition); border: none; font-size: 1rem;
+    }
+    .scroll-top.show { opacity: 1; pointer-events: all; }
+    .scroll-top:hover { transform: translateY(-3px); background: #a53048; }
+
+    /* ==================== LIGHTBOX ==================== */
+    .lightbox-overlay {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.93);
+      z-index: 99999; display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: var(--transition);
+    }
+    .lightbox-overlay.open { opacity: 1; pointer-events: all; }
+    .lightbox-img {
+      max-width: 90vw; max-height: 85vh;
+      border-radius: 12px; object-fit: contain;
+    }
+    .lightbox-close {
+      position: absolute; top: 22px; right: 28px;
+      color: white; font-size: 1.8rem; cursor: pointer; background: none; border: none;
+      transition: var(--transition);
+    }
+    .lightbox-close:hover { transform: scale(1.2); color: var(--rose); }
+
+    /* ==================== TOAST ==================== */
+    .custom-toast {
+      position: fixed; bottom: 32px; left: 50%; transform: translateX(-50%) translateY(80px);
+      background: white; border-radius: 16px; padding: 18px 28px;
+      box-shadow: var(--shadow); z-index: 99998; min-width: 300px;
+      display: flex; align-items: center; gap: 14px;
+      transition: transform 0.4s cubic-bezier(.4,0,.2,1), opacity 0.4s;
+      opacity: 0; pointer-events: none;
+    }
+    .custom-toast.show { transform: translateX(-50%) translateY(0); opacity: 1; pointer-events: all; }
+    .toast-icon { width: 40px; height: 40px; border-radius: 50%; background: #e8f5e9; display: flex; align-items: center; justify-content: center; color: #4caf50; font-size: 1.2rem; flex-shrink: 0; }
+    .toast-text .toast-title { font-weight: 700; color: var(--dark); font-size: 0.95rem; }
+    .toast-text .toast-msg { color: var(--muted); font-size: 0.84rem; }
+
+    /* ==================== UTILITY CLASSES ==================== */
+    .mb-20 { margin-bottom: 20px; }
+    .mb-28 { margin-bottom: 28px; }
+    .mb-60 { margin-bottom: 60px; }
+    .fw-600 { font-weight: 600 !important; }
+
+    /* ==================== RESPONSIVE ==================== */
+    @media (max-width: 991px) {
+      .hero-swiper { height: 78vh; }
+      .about-badge-float { right: 0; bottom: -16px; }
+      .about-img-main img { height: 360px; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+      .gallery-item.tall { grid-row: span 1; aspect-ratio: 3/4; }
+      .appt-card { padding: 30px 22px; }
+      .appt-info-card { padding: 28px 24px; }
+      .usp-card { padding: 32px 22px; }
+    }
+    @media (max-width: 767px) {
+      .section-pad { padding: 60px 0; }
+      .section-pad-sm { padding: 40px 0; }
+      .mb-60 { margin-bottom: 36px; }
+      .topbar .d-flex { font-size: 0.75rem; }
+      .hero-swiper { height: auto; min-height: 100svh; max-height: none; }
+      .hero-content { padding: 30px 0; }
+      .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+      .swiper-button-next, .swiper-button-prev { display: none; }
+      .about-badge-float { position: static; display: inline-flex; gap: 20px; border-left: none; border-top: 4px solid var(--rose); flex-direction: row; margin-top: 20px; padding: 14px 18px; }
+      .about-decor-dot { display: none; }
+      .about-img-main img { height: 280px; }
+      .appt-info-card { padding: 24px 20px; }
+      .usp-card { padding: 26px 18px; }
+      .stat-num { font-size: 2.4rem; }
+      .section-title { font-size: clamp(1.7rem, 5vw, 2.6rem); }
+      .brand-text-main { font-size: 1.1rem; }
+      .footer-desc { max-width: 100%; }
+      .custom-toast { left: 16px; right: 16px; min-width: unset; width: auto; transform: translateY(80px); }
+      .custom-toast.show { transform: translateY(0); }
+      #mobileNav .nav-link-custom { padding: 10px 14px !important; }
+      #mobileNav a.btn-rose { display: block; text-align: center; padding: 12px 22px; }
+      #mobileNav .lang-btn { padding: 7px 14px; font-size: 0.8rem; }
+    }
+    @media (max-width: 480px) {
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+      .hero-badges { display: none; }
+      .section-pad { padding: 48px 0; }
+      .section-pad-sm { padding: 32px 0; }
+      .mb-60 { margin-bottom: 28px; }
+      .hero-title { font-size: clamp(1.7rem, 7.5vw, 2.4rem); }
+      .hero-desc { font-size: 0.9rem; margin-bottom: 22px; }
+      .hero-scroll-hint { display: none; }
+      .appt-card { padding: 22px 14px; }
+      .appt-info-card { padding: 20px 14px; }
+      .service-body { padding: 18px; }
+      .outfit-card img { height: 230px; }
+      .stat-num { font-size: 1.9rem; }
+      .usp-card { padding: 22px 16px; }
+      .footer { padding: 48px 0 0; }
+      .whatsapp-float { bottom: 16px; right: 14px; }
+      .scroll-top { bottom: 80px; right: 14px; }
+      .whatsapp-btn { width: 50px; height: 50px; font-size: 1.4rem; }
+      .review-card { padding: 24px 18px; }
+      .section-subtitle { font-size: 0.93rem; }
+      .brand-text-main { font-size: 1rem; }
+      .about-badge-float { padding: 12px 16px; gap: 14px; }
+      .section-tag { font-size: 0.72rem; letter-spacing: 2px; }
+      .btn-rose, .btn-gold { padding: 12px 24px; }
+      .btn-outline-rose { padding: 10px 24px; }
+      .hero-tag { font-size: 0.72rem; padding: 5px 14px; }
+      .review-quote { font-size: 3rem; }
+      .stat-label { font-size: 0.82rem; }
+      .footer-bottom { padding: 18px 0; font-size: 0.78rem; }
+    }
+
+    /* ==================== SAFE AREA (NOTCH DEVICES) ==================== */
+    @supports (bottom: env(safe-area-inset-bottom)) {
+      .whatsapp-float { bottom: calc(30px + env(safe-area-inset-bottom)); }
+      .scroll-top { bottom: calc(100px + env(safe-area-inset-bottom)); }
+    }
+
+    /* ==================== GUJARATI FONT SUPPORT ==================== */
+    [lang="gu"] h1, [lang="gu"] h2, [lang="gu"] h3,
+    [lang="gu"] h4, [lang="gu"] h5, [lang="gu"] p,
+    [lang="gu"] span, [lang="gu"] a, [lang="gu"] li,
+    [lang="gu"] button, [lang="gu"] label {
+      font-family: 'Noto Sans Gujarati', 'Jost', sans-serif;
+    }
+
+    /* Success check animation */
+    @keyframes check-pop { 0%{transform:scale(0)}70%{transform:scale(1.2)}100%{transform:scale(1)} }
+    .check-anim { animation: check-pop 0.4s ease; }
+
+    /* Decorative petals */
+    .petal {
+      position: absolute; border-radius: 60% 40% 70% 30% / 30% 50% 70% 40%;
+      opacity: 0.07; pointer-events: none;
+    }
+    .petal-1 { width: 220px; height: 220px; background: var(--rose); top: -60px; right: -60px; }
+    .petal-2 { width: 160px; height: 160px; background: var(--gold); bottom: -40px; left: -40px; }
+
+    /* Number counter */
+    .counter { font-variant-numeric: tabular-nums; }
+  </style>
+</head>
+<body>
+
+<!-- ==================== TOPBAR ==================== -->
+<div class="topbar d-none d-md-block">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-0">
+        <i class="fas fa-phone-alt me-2" style="color:var(--gold-light)"></i>
+        <a href="tel:+919876543210">+91 98765 43210</a>
+        <span class="divider">|</span>
+        <i class="fas fa-map-marker-alt me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Bhanvad City, Gujarat, India" data-gu="ભાણવડ સિટી, ગુજરાત, ભારત">Bhanvad City, Gujarat, India</span>
+        <span class="divider">|</span>
+        <i class="fas fa-clock me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Mon–Sat: 9AM – 8PM" data-gu="સોમ–શનિ: સવારે ૯ – સાંજે ૮">Mon–Sat: 9AM – 8PM</span>
+      </div>
+      <div class="lang-switch">
+        <span style="color:rgba(255,255,255,0.5);font-size:0.75rem;margin-right:4px">
+          <i class="fas fa-globe me-1"></i>
+        </span>
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar-custom" id="mainNav">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <a href="#" class="navbar-brand-wrap">
+        <div class="brand-logo-circle">🌸</div>
+        <div>
+          <div class="brand-text-main" data-en="Mahek Beauty Parlour" data-gu="મહેક બ્યૂટી પાર્લર">Mahek Beauty Parlour</div>
+          <div class="brand-text-sub" data-en="Premium Beauty & Bridal" data-gu="પ્રીમિયમ બ્યૂટી & બ્રાઇડલ">Premium Beauty & Bridal</div>
+        </div>
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" onclick="toggleNav()">
+        <i class="fas fa-bars" id="navIcon" style="color:var(--rose);font-size:1.3rem"></i>
+      </button>
+      <div class="d-none d-lg-flex align-items-center gap-1" id="navLinks">
+        <a href="#home" class="nav-link-custom" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="#about" class="nav-link-custom" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="#services" class="nav-link-custom" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="#gallery" class="nav-link-custom" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="#outfits" class="nav-link-custom" data-en="Outfits" data-gu="ઉત્પ" >Outfits</a>
+        <a href="#reviews" class="nav-link-custom" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="#faq" class="nav-link-custom" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="#appointment" class="btn-rose ms-2" style="padding:10px 22px;border-radius:50px;font-size:0.84rem;font-weight:600" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+      </div>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobileNav" style="display:none;padding-top:16px;padding-bottom:8px;border-top:1px solid var(--border);margin-top:14px">
+      <div class="d-flex flex-column gap-1">
+        <a href="#home" class="nav-link-custom" onclick="closeNav()" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="#about" class="nav-link-custom" onclick="closeNav()" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="#services" class="nav-link-custom" onclick="closeNav()" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="#gallery" class="nav-link-custom" onclick="closeNav()" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="#outfits" class="nav-link-custom" onclick="closeNav()" data-en="Outfits" data-gu="ઉત્પ">Outfits</a>
+        <a href="#reviews" class="nav-link-custom" onclick="closeNav()" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="#faq" class="nav-link-custom" onclick="closeNav()" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="#appointment" class="btn-rose text-center mt-2" onclick="closeNav()" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+        <div class="d-flex gap-2 mt-2">
+          <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+          <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== HERO SLIDER ==================== -->
+<section id="home">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+
+      <!-- Slide 1 -->
+      <div class="swiper-slide hero-slide">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1607748851687-ba9a10438621?w=1600&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row">
+            <div class="col-lg-7 col-md-9">
+              <div class="hero-tag" data-en="✨ Premium Beauty Studio" data-gu="✨ પ્રીમિયમ બ્યૂટી સ્ટુડિઓ">✨ Premium Beauty Studio</div>
+              <h1 class="hero-title" data-en="Where Every Bride <em>Blooms</em> with Elegance" data-gu="જ્યાં દરેક વરરાજા <em>ખીલે છે</em> અભ્રોઆ સાથે">Where Every Bride <em>Blooms</em> with Elegance</h1>
+              <p class="hero-desc" data-en="Expert bridal makeup, designer outfits & complete beauty care in Bhanvad City, Gujarat." data-gu="ભાણવડ સિટી, ગુજરાતમાં નિષ્ણાત બ્રાઇડલ મેકઅપ, ડિઝાઇનર કપડાં અને સંપૂર્ણ સૌंदर्य સંભાળ.">Expert bridal makeup, designer outfits & complete beauty care in Bhanvad City, Gujarat.</p>
+              <div class="hero-badges">
+                <span class="hero-badge" data-en="👰 Bridal Specialist" data-gu="👰 બ્રાઇડલ નિષ્ણાત">👰 Bridal Specialist</span>
+                <span class="hero-badge" data-en="💅 Nail Art" data-gu="💅 નેઇલ આર્ટ">💅 Nail Art</span>
+                <span class="hero-badge" data-en="👗 Designer Outfits" data-gu="👗 ડિઝાઇનર ઉત્પ">👗 Designer Outfits</span>
+              </div>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#appointment" class="btn-rose" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+                <a href="#services" class="btn-outline-rose" style="border-color:rgba(255,255,255,0.5);color:white" data-en="Explore Services" data-gu="સેવાઓ જુઓ">Explore Services</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-scroll-hint" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})">
+          <span data-en="Scroll" data-gu="સ્ક્રૉલ">Scroll</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide hero-slide">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row">
+            <div class="col-lg-7 col-md-9">
+              <div class="hero-tag" data-en="💄 Bridal Makeup Experts" data-gu="💄 બ્રાઇડલ મેકઅપ નિષ્ણાતો">💄 Bridal Makeup Experts</div>
+              <h1 class="hero-title" data-en="Your <em>Dream Look</em> for the Most Important Day" data-gu="સૌથી મહત્વપૂર્ણ દિવસ માટે <em>સ્વપ્ન દેખાવ</em>">Your <em>Dream Look</em> for the Most Important Day</h1>
+              <p class="hero-desc" data-en="HD Bridal Makeup, Hair Styling, Mehendi & Designer Chaniyacholi — all under one roof." data-gu="HD બ્રાઇડલ મેકઅપ, હૅર સ્ટાઇલિંગ, મહેંદી & ડિઝાઇનર ચણિયાચોળી — બધું એક છત નીચે.">HD Bridal Makeup, Hair Styling, Mehendi & Designer Chaniyacholi — all under one roof.</p>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#gallery" class="btn-gold" data-en="View Bridal Gallery" data-gu="બ્રાઇડલ ગેલેરી">View Bridal Gallery</a>
+                <a href="https://wa.me/919876543210" target="_blank" class="btn-outline-rose" style="border-color:rgba(255,255,255,0.5);color:white">
+                  <i class="fab fa-whatsapp me-2"></i><span data-en="WhatsApp Us" data-gu="WhatsApp">WhatsApp Us</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide hero-slide">
+        <div class="hero-bg" style="background-image:url('https://images.unsplash.com/photo-1594938298603-c8148c4b4e10?w=1600&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="row">
+            <div class="col-lg-7 col-md-9">
+              <div class="hero-tag" data-en="👗 Designer Chaniyacholi" data-gu="👗 ડિઝાઇનર ચણિયાચોળી">👗 Designer Chaniyacholi</div>
+              <h1 class="hero-title" data-en="Stunning <em>Designer Outfits</em> for Couples" data-gu="યુગલ માટે <em>ડિઝાઇનર ઉત્પ</em>">Stunning <em>Designer Outfits</em> for Couples</h1>
+              <p class="hero-desc" data-en="Exclusive Chaniyacholi, lehengas & groom wear for your perfect wedding celebration." data-gu="એક્સ્ક્લૂઝિવ ચણિયાચોળી, લહેઙ્ગા & ગ્રૂમ વૅર.">Exclusive Chaniyacholi, lehengas & groom wear for your perfect wedding celebration.</p>
+              <div class="d-flex gap-3 flex-wrap">
+                <a href="#outfits" class="btn-rose" data-en="Browse Outfits" data-gu="ઉત્પ જુઓ">Browse Outfits</a>
+                <a href="#appointment" class="btn-outline-rose" style="border-color:rgba(255,255,255,0.5);color:white" data-en="Book Trial" data-gu="ટ્રાયલ બૂક કરો">Book Trial</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination" style="bottom:50px"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</section>
+
+<!-- ==================== MARQUEE ==================== -->
+<div class="marquee-strip">
+  <div class="marquee-track" id="marqueeTrack">
+    <span><i class="fas fa-star"></i> <span data-en="Bridal Makeup" data-gu="બ્રાઇડલ મેકઅપ">Bridal Makeup</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Nail Art" data-gu="નેઇલ આર્ટ">Nail Art</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Hair Styling" data-gu="હૅર સ્ટાઇલ">Hair Styling</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Hair Straightening" data-gu="હૅર સ્ટ્રેટ">Hair Straightening</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Facial & Cleanup" data-gu="ફેશિયલ">Facial & Cleanup</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Shinar / Highlighter" data-gu="શાઇનર">Shinar / Highlighter</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Waxing" data-gu="વૅક્સ">Waxing</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Designer Chaniyacholi" data-gu="ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</span></span>
+    <span><i class="fas fa-star"></i> <span data-en="Wedding Outfits" data-gu="લગ્ન ઉત્પ">Wedding Outfits</span></span>
+    <!-- Duplicate for seamless loop -->
+    <span><i class="fas fa-star"></i> <span>Bridal Makeup</span></span>
+    <span><i class="fas fa-star"></i> <span>Nail Art</span></span>
+    <span><i class="fas fa-star"></i> <span>Hair Styling</span></span>
+    <span><i class="fas fa-star"></i> <span>Hair Straightening</span></span>
+    <span><i class="fas fa-star"></i> <span>Facial & Cleanup</span></span>
+    <span><i class="fas fa-star"></i> <span>Shinar / Highlighter</span></span>
+    <span><i class="fas fa-star"></i> <span>Waxing</span></span>
+    <span><i class="fas fa-star"></i> <span>Designer Chaniyacholi</span></span>
+    <span><i class="fas fa-star"></i> <span>Wedding Outfits</span></span>
+  </div>
+</div>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="about-img-wrap">
+          <div class="about-decor-dot"></div>
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Mahek Beauty Parlour Interior" loading="lazy" />
+          </div>
+          <div class="about-badge-float">
+            <div class="num counter" data-target="5">0</div>
+            <div class="lbl" data-en="Years of Excellence" data-gu="ઉત્કૃષ્ટ વર્ષ">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="section-tag"><span class="gold-line"></span> <span data-en="About Us" data-gu="અમારા વિશે">About Us</span></div>
+        <h2 class="section-title" data-en="Bhanvad's Most Trusted <span style='color:var(--rose)'>Beauty Destination</span>" data-gu="ભાણવડ્નું સૌથી વિશ્વસ્ત <span style='color:var(--rose)'>બ્યૂટી ઠેકાણું</span>">
+          Bhanvad's Most Trusted <span style="color:var(--rose)">Beauty Destination</span>
+        </h2>
+        <p class="mb-20" data-en="Welcome to Mahek Beauty Parlour — where tradition meets modern elegance. Founded by Dharmishtha Piprotar, we have been transforming brides and beauty lovers in Bhanvad City for over 5 years." data-gu="મહેક બ્યૂટી પાર્લરમાં આપનું સ્વાગત છે — જ્યાં પ્રસ્ !!ity meets modern elegance. ધર્મિષ્ઠા પ‍ipo ⁠tratar દ્વારા સ્થાપિત, અમે ૫ વર્ષ以上 ભ!ware !City !!ity !ity !!ity !ity !!.">
+          Welcome to Mahek Beauty Parlour — where tradition meets modern elegance. Founded by <strong>Dharmishtha Piprotar</strong>, we have been transforming brides and beauty lovers in Bhanvad City for over 5 years. Our parlour is a sanctuary of beauty, where every client is treated like a queen.
+        </p>
+        <ul class="about-list list-unstyled mt-4">
+          <li><i class="fas fa-check-circle"></i> <span data-en="Expert bridal & party makeup by certified artists" data-gu="પ્રમાણિત કલાકારો દ્વારા નિષ્ણાત બ્રાઇડલ & પાર્ટી મેકઅプ">Expert bridal & party makeup by certified artists</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Premium branded products — skin-safe & long-lasting" data-gu="ઉચ્ચ-ગ્રેડ ઉत्पادों — ਚਮੜੀ-ਸੁਰੱਖਿਅਤ & ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਚੱਲਣ ਵਾਲੇ">Premium branded products — skin-safe & long-lasting</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Designer Chaniyacholi & wedding outfits on rent & sale" data-gu="ભાઝ & ​​વéch ​​ wedding outfits ભâ­ô !ity & ​​s​​ale">Designer Chaniyacholi & wedding outfits on rent & sale</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Hygienic, welcoming & fully air-conditioned salon" data-gu="​​H​​ygienic ​​welcoming​​ & ​​fully​​ ​​A​​ir-cond ​​salé">Hygienic, welcoming & fully air-conditioned salon</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Home service available on request" data-gu="ઘ​​ré ​​service ​​availë​ ​​on​ ​​req​​.">Home service available on request</span></li>
+        </ul>
+        <div class="owner-chip">
+          <div class="owner-av">👩</div>
+          <div>
+            <div class="owner-name">Dharmishtha Piprotar</div>
+            <div class="owner-role" data-en="Founder & Lead Beauty Artist" data-gu="સ્થાપક & મુખ્ય બ્યૂટી આर्टिস्ट">Founder & Lead Beauty Artist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<section class="stats-section section-pad-sm">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="1200">0</span>+</div>
+          <div class="stat-label" data-en="Happy Clients" data-gu="ખુşh ​​Clients">Happy Clients</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="350">0</span>+</div>
+          <div class="stat-label" data-en="Bridal Makeovers" data-gu="​​Bridal Makeovers">Bridal Makeovers</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="5">0</span>+</div>
+          <div class="stat-label" data-en="Years Experience" data-gu="​​Years Exp.">Years Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label" data-en="Client Satisfaction" data-gu="​​Client Satisfaction">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section id="services" class="section-pad bg-blush">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Our Services" data-gu="​​Our Services">Our Services</span></div>
+      <h2 class="section-title" data-en="Beauty Treatments That <span style='color:var(--rose)'>Transform</span> You" data-gu="​​Beauty Treatments That <span style='color:var(--rose)'>Transform</span> You">
+        Beauty Treatments That <span style="color:var(--rose)">Transform</span> You
+      </h2>
+      <p class="section-subtitle mx-auto" data-en="From bridal glam to everyday glow — we offer a wide range of beauty services tailored just for you." data-gu="​​bridal glam ​​to ​​everyday glow — ​​we ​​offer ​​a ​​wide ​​range.">From bridal glam to everyday glow — we offer a wide range of beauty services tailored just for you.</p>
+    </div>
+    <div class="row g-4">
+      <!-- Bridal Makeup -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <div class="service-icon-circle">👰</div>
+          </div>
+          <div class="service-body">
+            <h5 data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</h5>
+            <div class="service-price" data-en="Starting ₹2,500" data-gu="​​Starting ₹2,500">Starting ₹2,500</div>
+            <p data-en="HD & Airbrush bridal makeup for your dream wedding look. Includes full face, eyes, contouring & lashes." data-gu="​​HD & Airbrush bridal makeup ​​.">HD & Airbrush bridal makeup for your dream wedding look. Includes full face, eyes, contouring & lashes.</p>
+            <a href="#appointment" class="view-more-link">
+              <span data-en="View Details" data-gu="​​View Details">View Details</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Nail Art -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <div class="service-icon-circle">💅</div>
+          </div>
+          <div class="service-body">
+            <h5 data-en="Nail Art" data-gu="​​Nail Art">Nail Art</h5>
+            <div class="service-price" data-en="Starting ₹300" data-gu="​​Starting ₹300">Starting ₹300</div>
+            <p data-en="Gel nails, acrylic extensions, 3D nail art, French tips, ombre & bridal nail designs. Nail care & pedicure also." data-gu="​​Gel nails, acrylic extensions, 3D nail art.">Gel nails, acrylic extensions, 3D nail art, French tips, ombre & bridal nail designs. Nail care & pedicure also.</p>
+            <a href="#appointment" class="view-more-link">
+              <span data-en="View Details" data-gu="​​View Details">View Details</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Hair Styling -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <div class="service-icon-circle">✂️</div>
+          </div>
+          <div class="service-body">
+            <h5 data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</h5>
+            <div class="service-price" data-en="Starting ₹500" data-gu="​​Starting ₹500">Starting ₹500</div>
+            <p data-en="Bridal hairdos, curls, updo, open style, bun, party hairstyles & hair cutting. For all hair types." data-gu="​​Bridal hairdos, curls, updo, open style.">Bridal hairdos, curls, updo, open style, bun, party hairstyles & hair cutting. For all hair types.</p>
+            <a href="#appointment" class="view-more-link">
+              <span data-en="View Details" data-gu="​​View Details">View Details</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Hair Straightening -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <div class="service-icon-circle" style="background:linear-gradient(135deg,var(--gold),#8B6014)">🪮</div>
+          </div>
+          <div class="service-body">
+            <h5 data-en="Hair Straightening" data-gu="​​Hair Straightening">Hair Straightening</h5>
+            <div class="service-price" data-en="Starting ₹1,500" data-gu="​​Starting ₹1,500">Starting ₹1,500</div>
+            <p data-en="Keratin treatment, rebonding, smoothening & Japanese hair straightening. Frizz-free, long-lasting results." data-gu="​​Keratin treatment, rebonding, smoothening.">Keratin treatment, rebonding, smoothening & Japanese hair straightening. Frizz-free, long-lasting results.</p>
+            <a href="#appointment" class="view-more-link">
+              <span data-en="View Details" data-gu="​​View Details">View Details</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Facial -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="80">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <div class="service-icon-circle" style="background:linear-gradient(135deg,#e07b54,#c0392b)">🧖</div>
+          </div>
+          <div class="service-body">
+            <h5 data-en="Facial & Cleanup" data-gu="​​Facial & Cleanup">Facial & Cleanup</h5>
+            <div class="service-price" data-en="Starting ₹400" data-gu="​​Starting ₹400">Starting ₹400</div>
+            <p data-en="Gold facial, diamond facial, detan, bleach, skin cleanup, de-pigmentation & anti-aging treatments." data-gu="​​Gold facial, diamond facial, detan, bleach.">Gold facial, diamond facial, detan, bleach, skin cleanup, de-pigmentation & anti-aging treatments.</p>
+            <a href="#appointment" class="view-more-link">
+              <span data-en="View Details" data-gu="​​View Details">View Details</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Shinar / Wax -->
+      <div class="col-sm-6 col-lg-4" data-aos="fade-up" data-aos-delay="160">
+        <div class="service-card">
+          <div class="service-icon-wrap">
+            <div class="service-icon-bg"></div>
+            <div class="service-icon-circle" style="background:linear-gradient(135deg,#8e44ad,#6c3483)">✨</div>
+          </div>
+          <div class="service-body">
+            <h5 data-en="Shinar, Wax & More" data-gu="​​Shinar, Wax & More">Shinar, Wax & More</h5>
+            <div class="service-price" data-en="Starting ₹200" data-gu="​​Starting ₹200">Starting ₹200</div>
+            <p data-en="Full body waxing, threading, shinar (skin highlighter), eyebrow shaping, upper lip & full face wax." data-gu="​​Full body waxing, threading, shinar.">Full body waxing, threading, shinar (skin highlighter), eyebrow shaping, upper lip & full face wax.</p>
+            <a href="#appointment" class="view-more-link">
+              <span data-en="View Details" data-gu="​​View Details">View Details</span> <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20know%20about%20your%20services%20%26%20pricing." target="_blank" class="btn-gold">
+        <i class="fab fa-whatsapp me-2"></i>
+        <span data-en="Ask for Price List on WhatsApp" data-gu="​​WhatsApp ​​par Price List">Ask for Price List on WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== USP ==================== -->
+<section class="usp-section section-pad">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="color:var(--gold-light)"><span style="display:inline-block;width:60px;height:2px;background:var(--gold-light)"></span> <span data-en="Why Choose Us" data-gu="​​Why Choose Us">Why Choose Us</span></div>
+      <h2 class="section-title" style="color:white" data-en="The Mahek <span style='color:var(--gold-light)'>Difference</span>" data-gu="​​Mahek <span style='color:var(--gold-light)'>Difference</span>">
+        The Mahek <span style="color:var(--gold-light)">Difference</span>
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="usp-card">
+          <div class="usp-icon-3d">🏆</div>
+          <h5 data-en="5+ Years of Expertise" data-gu="​​5+ Years of Expertise">5+ Years of Expertise</h5>
+          <p data-en="Decades of combined experience by our master artists. We've perfected the craft." data-gu="​​Decades of combined experience.">Decades of combined experience by our master artists. We've perfected the craft.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="usp-card">
+          <div class="usp-icon-3d">💎</div>
+          <h5 data-en="Premium Products Only" data-gu="​​Premium Products Only">Premium Products Only</h5>
+          <p data-en="We use only branded, dermatologically-tested products safe for all skin types including sensitive skin." data-gu="​​We use only branded products.">We use only branded, dermatologically-tested products safe for all skin types.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="usp-card">
+          <div class="usp-icon-3d">🤍</div>
+          <h5 data-en="Hygienic & Safe" data-gu="​​Hygienic & Safe">Hygienic & Safe</h5>
+          <p data-en="Fully sanitised tools, single-use applicators & a clean, welcoming environment every day." data-gu="​​Fully sanitised tools & clean environment.">Fully sanitised tools, single-use applicators & a clean, welcoming environment every day.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="usp-card">
+          <div class="usp-icon-3d">🏡</div>
+          <h5 data-en="Home Service Available" data-gu="​​Home Service Available">Home Service Available</h5>
+          <p data-en="Can't visit? We come to you! Home beauty services available for brides & special events." data-gu="​​Home beauty services available.">Can't visit? We come to you! Home beauty services available for brides & special events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== GALLERY / BRIDAL ==================== -->
+<section id="gallery" class="section-pad bg-blush">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Bridal Gallery" data-gu="​​Bridal Gallery">Bridal Gallery</span></div>
+      <h2 class="section-title" data-en="Our <span style='color:var(--rose)'>Beautiful</span> Work" data-gu="​​Our <span style='color:var(--rose)'>Beautiful</span> Work">
+        Our <span style="color:var(--rose)">Beautiful</span> Work
+      </h2>
+      <p class="section-subtitle mx-auto" data-en="Real transformations, real brides — see the magic we create at Mahek Beauty Parlour." data-gu="​​Real transformations, real brides.">Real transformations, real brides — see the magic we create at Mahek Beauty Parlour.</p>
+    </div>
+
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item tall" onclick="openLightbox('https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=600&q=75" alt="Bridal Makeup 1" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1585418959375-0394edddbabc?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1585418959375-0394edddbabc?w=600&q=75" alt="Nail Art" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Nail Art" data-gu="​​Nail Art">Nail Art</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=75" alt="Hair Styling" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=600&q=75" alt="Bridal Look 2" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Bridal Look" data-gu="​​Bridal Look">Bridal Look</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=75" alt="Makeup Close-up" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Facial Glow" data-gu="​​Facial Glow">Facial Glow</span></div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="mt-5">
+      <h4 class="text-center mb-4" data-en="✨ Watch Our Work" data-gu="​​Watch Our Work">✨ Watch Our Work</h4>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="video-card" onclick="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+            <img class="video-thumb" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=70" alt="Video 1" loading="lazy" />
+            <div class="video-play-btn"><div class="play-circle"><i class="fas fa-play"></i></div></div>
+          </div>
+          <p class="text-center mt-2 fw-600" style="font-size:.9rem" data-en="Bridal Makeup Tutorial" data-gu="​​Bridal Makeup Tutorial">Bridal Makeup Tutorial</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-card" onclick="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+            <img class="video-thumb" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=70" alt="Video 2" loading="lazy" />
+            <div class="video-play-btn"><div class="play-circle"><i class="fas fa-play"></i></div></div>
+          </div>
+          <p class="text-center mt-2 fw-600" style="font-size:.9rem" data-en="Nail Art Process" data-gu="​​Nail Art Process">Nail Art Process</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="video-card" onclick="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+            <img class="video-thumb" src="https://images.unsplash.com/photo-1594938298603-c8148c4b4e10?w=600&q=70" alt="Video 3" loading="lazy" />
+            <div class="video-play-btn"><div class="play-circle"><i class="fas fa-play"></i></div></div>
+          </div>
+          <p class="text-center mt-2 fw-600" style="font-size:.9rem" data-en="Hair Transformation" data-gu="​​Hair Transformation">Hair Transformation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== OUTFITS ==================== -->
+<section id="outfits" class="section-pad">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Designer Outfits" data-gu="​​Designer Outfits">Designer Outfits</span></div>
+      <h2 class="section-title" data-en="Exclusive <span style='color:var(--rose)'>Chaniyacholi</span> & Wedding Wear" data-gu="​​Exclusive <span style='color:var(--rose)'>Chaniyacholi</span> & Wedding Wear">
+        Exclusive <span style="color:var(--rose)">Chaniyacholi</span> & Wedding Wear
+      </h2>
+      <p class="section-subtitle mx-auto" data-en="Beautiful designer outfits for brides, grooms & couples. Available on rent & purchase in Bhanvad." data-gu="​​Beautiful designer outfits for brides, grooms.">Beautiful designer outfits for brides, grooms & couples. Available on rent & purchase in Bhanvad.</p>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="0">
+        <div class="outfit-card">
+          <img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?w=400&q=75" alt="Chaniyacholi" loading="lazy" />
+          <div class="outfit-label">
+            <h6 data-en="Bridal Chaniyacholi" data-gu="​​Bridal Chaniyacholi">Bridal Chaniyacholi</h6>
+            <span data-en="Available on Rent & Sale" data-gu="​​Rent & Sale">Available on Rent & Sale</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="80">
+        <div class="outfit-card">
+          <img src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?w=400&q=75" alt="Lehenga" loading="lazy" />
+          <div class="outfit-label">
+            <h6 data-en="Designer Lehenga" data-gu="​​Designer Lehenga">Designer Lehenga</h6>
+            <span data-en="Exclusive Collection" data-gu="​​Exclusive Collection">Exclusive Collection</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="160">
+        <div class="outfit-card">
+          <img src="https://images.unsplash.com/photo-1594938298603-c8148c4b4e10?w=400&q=75" alt="Couple Outfit" loading="lazy" />
+          <div class="outfit-label">
+            <h6 data-en="Couple Matching Outfits" data-gu="​​Couple Matching Outfits">Couple Matching Outfits</h6>
+            <span data-en="Special Wedding Package" data-gu="​​Special Wedding Package">Special Wedding Package</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="fade-up" data-aos-delay="240">
+        <div class="outfit-card">
+          <img src="https://images.unsplash.com/photo-1611042553365-9b101441c135?w=400&q=75" alt="Groom Sherwani" loading="lazy" />
+          <div class="outfit-label">
+            <h6 data-en="Groom Sherwani" data-gu="​​Groom Sherwani">Groom Sherwani</h6>
+            <span data-en="Premium Groom Collection" data-gu="​​Premium Groom Collection">Premium Groom Collection</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-5" data-aos="fade-up">
+      <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20inquire%20about%20your%20designer%20outfits." target="_blank" class="btn-rose me-3">
+        <i class="fab fa-whatsapp me-2"></i><span data-en="Inquire About Outfits" data-gu="​​Inquire Outfits">Inquire About Outfits</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REVIEWS ==================== -->
+<section id="reviews" class="section-pad bg-blush">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Customer Reviews" data-gu="​​Customer Reviews">Customer Reviews</span></div>
+      <h2 class="section-title" data-en="What Our <span style='color:var(--rose)'>Clients</span> Say" data-gu="​​What Our <span style='color:var(--rose)'>Clients</span> Say">
+        What Our <span style="color:var(--rose)">Clients</span> Say
+      </h2>
+      <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+        <div style="color:var(--gold-light);font-size:1.3rem">⭐⭐⭐⭐⭐</div>
+        <span style="font-weight:700;font-size:1.1rem;color:var(--dark)">4.9 / 5</span>
+        <span style="color:var(--muted);font-size:0.9rem">(120+ Reviews)</span>
+      </div>
+    </div>
+
+    <div class="swiper review-swiper" data-aos="fade-up">
+      <div class="swiper-wrapper">
+        <!-- Review 1 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="My bridal look was absolutely stunning! Dharmishtha ben created exactly what I had dreamed of. All my wedding guests couldn't stop complimenting me. Best parlour in Bhanvad, no doubt!" data-gu="​​My bridal look was absolutely stunning!">My bridal look was absolutely stunning! Dharmishtha ben created exactly what I had dreamed of. All my wedding guests couldn't stop complimenting me. Best parlour in Bhanvad, no doubt!</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">P</div>
+              <div>
+                <div class="reviewer-name">Priya Mer</div>
+                <div class="reviewer-loc">Bhanvad City</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 2 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="Got my Chaniyacholi from Mahek and the bridal makeup done too. Everything was perfect! The team is so caring and skilled. The outfit was exactly as I wanted." data-gu="​​Got my Chaniyacholi from Mahek and bridal makeup done.">Got my Chaniyacholi from Mahek and the bridal makeup done too. Everything was perfect! The team is so caring and skilled. The outfit was exactly as I wanted.</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">K</div>
+              <div>
+                <div class="reviewer-name">Kiran Gohel</div>
+                <div class="reviewer-loc">Dwarka</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 3 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="My nail art was so unique and beautiful! Totally worth every rupee. Very hygienic place and the staff is extremely friendly. Will definitely come back again!" data-gu="​​My nail art was so unique and beautiful!">My nail art was so unique and beautiful! Totally worth every rupee. Very hygienic place and the staff is extremely friendly. Will definitely come back again!</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">S</div>
+              <div>
+                <div class="reviewer-name">Shreya Joshi</div>
+                <div class="reviewer-loc">Jamnagar</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 4 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="Excellent facial service! My skin glowed after the gold facial. Dharmishtha ji is very skilled and knowledgeable. I go there every month now for skin care." data-gu="​​Excellent facial service! My skin glowed after the gold facial.">Excellent facial service! My skin glowed after the gold facial. Dharmishtha ji is very skilled and knowledgeable. I go there every month now for skin care.</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">R</div>
+              <div>
+                <div class="reviewer-name">Rekha Parmar</div>
+                <div class="reviewer-loc">Bhanvad City</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Review 5 -->
+        <div class="swiper-slide">
+          <div class="review-card">
+            <div class="review-stars">⭐⭐⭐⭐⭐</div>
+            <div class="review-text">
+              <span class="review-quote">"</span>
+              <span data-en="Got hair straightening done and the results are amazing — completely frizz free and glossy! Very reasonable prices and very professional. Highly recommended." data-gu="​​Got hair straightening done and the results are amazing.">Got hair straightening done and the results are amazing — completely frizz free and glossy! Very reasonable prices and very professional. Highly recommended.</span>
+            </div>
+            <div class="reviewer">
+              <div class="reviewer-av">N</div>
+              <div>
+                <div class="reviewer-name">Nita Rabari</div>
+                <div class="reviewer-loc">Khambhalia</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== APPOINTMENT ==================== -->
+<section id="appointment" class="appointment-section section-pad">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Book Now" data-gu="​​Book Now">Book Now</span></div>
+      <h2 class="section-title" data-en="Book Your <span style='color:var(--rose)'>Appointment</span>" data-gu="​​Book Your <span style='color:var(--rose)'>Appointment</span>">
+        Book Your <span style="color:var(--rose)">Appointment</span>
+      </h2>
+      <p class="section-subtitle mx-auto" data-en="Fill the form and we'll confirm your appointment within 1 hour. Or WhatsApp us directly." data-gu="​​Fill the form and we'll confirm.">Fill the form and we'll confirm your appointment within 1 hour. Or WhatsApp us directly.</p>
+    </div>
+    <div class="row g-4 align-items-start">
+      <!-- Form -->
+      <div class="col-lg-7" data-aos="fade-right">
+        <div class="appt-card">
+          <h4 class="mb-28" data-en="📅 Book an Appointment" data-gu="​​📅 Book an Appointment">📅 Book an Appointment</h4>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label class="form-label-custom" data-en="Your Full Name *" data-gu="​​Full Name *">Your Full Name *</label>
+              <input type="text" class="form-control-custom" id="apptName" placeholder="e.g. Priya Mer" required />
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" data-en="Phone Number *" data-gu="​​Phone Number *">Phone Number *</label>
+              <input type="tel" class="form-control-custom" id="apptPhone" placeholder="+91 98765 43210" required />
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" data-en="Select Service *" data-gu="​​Select Service *">Select Service *</label>
+              <select class="form-select-custom" id="apptService">
+                <option value="" data-en="-- Choose Service --" data-gu="-- Choose Service --">-- Choose Service --</option>
+                <option data-en="Bridal Makeup" data-gu="Bridal Makeup">Bridal Makeup</option>
+                <option data-en="Nail Art" data-gu="Nail Art">Nail Art</option>
+                <option data-en="Hair Styling" data-gu="Hair Styling">Hair Styling</option>
+                <option data-en="Hair Straightening" data-gu="Hair Straightening">Hair Straightening</option>
+                <option data-en="Facial / Cleanup" data-gu="Facial / Cleanup">Facial / Cleanup</option>
+                <option data-en="Waxing / Threading" data-gu="Waxing / Threading">Waxing / Threading</option>
+                <option data-en="Shinar / Highlighter" data-gu="Shinar / Highlighter">Shinar / Highlighter</option>
+                <option data-en="Designer Chaniyacholi" data-gu="Designer Chaniyacholi">Designer Chaniyacholi</option>
+                <option data-en="Wedding Outfit" data-gu="Wedding Outfit">Wedding Outfit</option>
+                <option data-en="Other" data-gu="Other">Other</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" data-en="Preferred Date *" data-gu="​​Preferred Date *">Preferred Date *</label>
+              <input type="date" class="form-control-custom" id="apptDate" required />
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" data-en="Preferred Time" data-gu="​​Preferred Time">Preferred Time</label>
+              <select class="form-select-custom" id="apptTime">
+                <option>9:00 AM</option><option>10:00 AM</option><option>11:00 AM</option>
+                <option>12:00 PM</option><option>2:00 PM</option><option>3:00 PM</option>
+                <option>4:00 PM</option><option>5:00 PM</option><option>6:00 PM</option>
+              </select>
+            </div>
+            <div class="col-sm-6">
+              <label class="form-label-custom" data-en="Home Service?" data-gu="​​Home Service?">Home Service?</label>
+              <select class="form-select-custom" id="apptHome">
+                <option value="no" data-en="No – I'll visit the parlour" data-gu="No – I'll visit">No – I'll visit the parlour</option>
+                <option value="yes" data-en="Yes – Home service needed" data-gu="Yes – Home service">Yes – Home service needed</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label class="form-label-custom" data-en="Additional Notes" data-gu="​​Additional Notes">Additional Notes</label>
+              <textarea class="form-control-custom" id="apptNote" placeholder="Tell us more about your requirements..."></textarea>
+            </div>
+            <div class="col-12 d-flex gap-3 flex-wrap">
+              <button class="btn-rose" onclick="submitAppointment()" type="button" data-en="Confirm Appointment" data-gu="​​Confirm Appointment">Confirm Appointment</button>
+              <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-outline-rose" style="display:inline-flex;align-items:center;gap:8px">
+                <i class="fab fa-whatsapp"></i> <span data-en="WhatsApp Instead" data-gu="​​WhatsApp">WhatsApp Instead</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Info -->
+      <div class="col-lg-5" data-aos="fade-left">
+        <div class="appt-info-card">
+          <div>
+            <h3 class="mb-4" data-en="Visit Us 📍" data-gu="​​Visit Us 📍">Visit Us 📍</h3>
+            <ul class="appt-info-list list-unstyled">
+              <li><i class="fas fa-map-marker-alt"></i>
+                <span data-en="Mahek Beauty Parlour, Main Bazar, Bhanvad City, Devbhumi Dwarka, Gujarat – 361 001" data-gu="​​Mahek Beauty Parlour, Main Bazar, Bhanvad City, Gujarat">Mahek Beauty Parlour, Main Bazar, Bhanvad City, Devbhumi Dwarka, Gujarat – 361 001</span>
+              </li>
+              <li><i class="fas fa-phone-alt"></i>
+                <span>+91 98765 43210</span>
+              </li>
+              <li><i class="fab fa-whatsapp"></i>
+                <span data-en="WhatsApp: +91 98765 43210" data-gu="​​WhatsApp: +91 98765 43210">WhatsApp: +91 98765 43210</span>
+              </li>
+              <li><i class="fas fa-clock"></i>
+                <span data-en="Monday – Saturday: 9:00 AM – 8:00 PM" data-gu="​​Mon – Sat: 9AM – 8PM">Monday – Saturday: 9:00 AM – 8:00 PM</span>
+              </li>
+              <li><i class="fas fa-clock"></i>
+                <span data-en="Sunday: 10:00 AM – 6:00 PM" data-gu="​​Sunday: 10AM – 6PM">Sunday: 10:00 AM – 6:00 PM</span>
+              </li>
+              <li><i class="fas fa-home"></i>
+                <span data-en="Home service available (call to book)" data-gu="​​Home service available">Home service available (call to book)</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-4">
+            <a href="https://maps.google.com/?q=Bhanvad+Gujarat" target="_blank" class="appt-map-btn">
+              <i class="fas fa-directions"></i> <span data-en="Get Directions" data-gu="​​Get Directions">Get Directions</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FAQ ==================== -->
+<section id="faq" class="section-pad">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="text-center mb-60" data-aos="fade-up">
+          <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="FAQ" data-gu="​​FAQ">FAQ</span></div>
+          <h2 class="section-title" data-en="Frequently Asked <span style='color:var(--rose)'>Questions</span>" data-gu="​​Frequently Asked <span style='color:var(--rose)'>Questions</span>">
+            Frequently Asked <span style="color:var(--rose)">Questions</span>
+          </h2>
+        </div>
+
+        <div class="accordion faq-accordion" id="faqAccordion" data-aos="fade-up">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                <span data-en="Do I need to book an appointment in advance?" data-gu="​​Do I need to book an appointment in advance?">Do I need to book an appointment in advance?</span>
+              </button>
+            </h2>
+            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-en="For bridal services and outfits, advance booking of at least 7 days is highly recommended. For regular services like facial, nail art, wax etc., you can book 1-2 days in advance or even walk in if we have availability." data-gu="​​For bridal services, advance booking is recommended.">For bridal services and outfits, advance booking of at least 7 days is highly recommended. For regular services like facial, nail art, wax etc., you can book 1-2 days in advance or even walk in if we have availability.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                <span data-en="Do you provide home service for bridal makeup?" data-gu="​​Do you provide home service?">Do you provide home service for bridal makeup?</span>
+              </button>
+            </h2>
+            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-en="Yes! We provide home service for bridal makeup, hair styling and basic beauty services within Bhanvad and nearby areas. Please call or WhatsApp us to discuss and confirm the home service booking." data-gu="​​Yes! We provide home service for bridal makeup.">Yes! We provide home service for bridal makeup, hair styling and basic beauty services within Bhanvad and nearby areas. Please call or WhatsApp us to discuss and confirm the home service booking.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                <span data-en="What products do you use for makeup and treatments?" data-gu="​​What products do you use?">What products do you use for makeup and treatments?</span>
+              </button>
+            </h2>
+            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-en="We use only premium, branded products from trusted brands. All our products are dermatologically tested and safe for all skin types including sensitive skin. We never compromise on quality." data-gu="​​We use only premium, branded products.">We use only premium, branded products from trusted brands. All our products are dermatologically tested and safe for all skin types including sensitive skin. We never compromise on quality.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                <span data-en="Can we rent Chaniyacholi / outfits for one day?" data-gu="​​Can we rent Chaniyacholi?">Can we rent Chaniyacholi / outfits for one day?</span>
+              </button>
+            </h2>
+            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-en="Yes, we offer outfits on both rent and sale basis. Rental packages are available for 1 day to 3 days. Please visit or contact us to see the full collection and discuss pricing." data-gu="​​Yes, we offer outfits on rent and sale.">Yes, we offer outfits on both rent and sale basis. Rental packages are available for 1 day to 3 days. Please visit or contact us to see the full collection and discuss pricing.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                <span data-en="What is your cancellation policy?" data-gu="​​What is your cancellation policy?">What is your cancellation policy?</span>
+              </button>
+            </h2>
+            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-en="For regular services, cancellations can be made up to 4 hours before appointment. For bridal bookings, please inform at least 3 days in advance. We understand that plans change and always try to be flexible." data-gu="​​Cancellations can be made 4 hours before appointment.">For regular services, cancellations can be made up to 4 hours before appointment. For bridal bookings, please inform at least 3 days in advance. We understand that plans change and always try to be flexible.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                <span data-en="What is the price range for bridal makeup?" data-gu="​​What is the price range for bridal makeup?">What is the price range for bridal makeup?</span>
+              </button>
+            </h2>
+            <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body" data-en="Bridal makeup packages start from ₹2,500 and go up to ₹15,000 depending on the type (HD, Airbrush, Party etc.) and inclusions like hair styling, dupatta draping etc. Please WhatsApp us for the full price list." data-gu="​​Bridal makeup packages start from ₹2,500.">Bridal makeup packages start from ₹2,500 and go up to ₹15,000 depending on the type (HD, Airbrush, Party etc.) and inclusions like hair styling, dupatta draping etc. Please WhatsApp us for the full price list.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-5" data-aos="fade-up">
+          <p class="mb-3" data-en="Still have questions? We're here to help!" data-gu="​​Still have questions?">Still have questions? We're here to help!</p>
+          <a href="https://wa.me/919876543210?text=Hi!%20I%20have%20a%20question%20about%20your%20services." target="_blank" class="btn-rose">
+            <i class="fab fa-whatsapp me-2"></i><span data-en="Ask Us on WhatsApp" data-gu="​​WhatsApp">Ask Us on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="brand-logo-circle" style="width:48px;height:48px;font-size:1.2rem">🌸</div>
+          <div>
+            <div class="brand-text-main" style="color:white">Mahek Beauty Parlour</div>
+            <div class="brand-text-sub" style="color:var(--gold-light)">Premium Beauty & Bridal</div>
+          </div>
+        </div>
+        <p class="footer-desc" data-en="Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day." data-gu="​​Your premium beauty destination in Bhanvad.">Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/919876543210" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Quick Links" data-gu="​​Quick Links">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#home"><i class="fas fa-chevron-right"></i><span data-en="Home" data-gu="​​Home">Home</span></a></li>
+          <li><a href="#about"><i class="fas fa-chevron-right"></i><span data-en="About Us" data-gu="​​About Us">About Us</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Services" data-gu="​​Services">Services</span></a></li>
+          <li><a href="#gallery"><i class="fas fa-chevron-right"></i><span data-en="Gallery" data-gu="​​Gallery">Gallery</span></a></li>
+          <li><a href="#outfits"><i class="fas fa-chevron-right"></i><span data-en="Outfits" data-gu="​​Outfits">Outfits</span></a></li>
+          <li><a href="#reviews"><i class="fas fa-chevron-right"></i><span data-en="Reviews" data-gu="​​Reviews">Reviews</span></a></li>
+          <li><a href="#faq"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+          <li><a href="#appointment"><i class="fas fa-chevron-right"></i><span data-en="Book Now" data-gu="​​Book Now">Book Now</span></a></li>
+        </ul>
+      </div>
+      <!-- Services -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Services" data-gu="​​Services">Services</h6>
+        <ul class="footer-links">
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Nail Art" data-gu="​​Nail Art">Nail Art</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Hair Straightening" data-gu="​​Hair Straightening">Hair Straightening</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Facial" data-gu="​​Facial">Facial</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Shinar" data-gu="​​Shinar">Shinar</span></a></li>
+          <li><a href="#services"><i class="fas fa-chevron-right"></i><span data-en="Waxing" data-gu="​​Waxing">Waxing</span></a></li>
+          <li><a href="#outfits"><i class="fas fa-chevron-right"></i><span data-en="Designer Outfits" data-gu="​​Designer Outfits">Designer Outfits</span></a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-6">
+        <h6 data-en="Contact Us" data-gu="​​Contact Us">Contact Us</h6>
+        <ul class="footer-contact list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-en="Mahek Beauty Parlour, Main Bazar, Bhanvad City, Devbhumi Dwarka, Gujarat – 361 001" data-gu="​​Main Bazar, Bhanvad City, Gujarat">Mahek Beauty Parlour, Main Bazar, Bhanvad City, Devbhumi Dwarka, Gujarat – 361 001</span>
+          </li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+919876543210" style="color:rgba(255,255,255,0.6)">+91 98765 43210</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/919876543210" style="color:rgba(255,255,255,0.6)">WhatsApp Us</a></li>
+          <li><i class="fas fa-clock"></i> <span data-en="Mon–Sat: 9AM–8PM | Sun: 10AM–6PM" data-gu="​​Mon–Sat: 9–8 | Sun: 10–6">Mon–Sat: 9AM–8PM | Sun: 10AM–6PM</span></li>
+        </ul>
+        <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-gold" style="padding:11px 28px;font-size:0.86rem">
+          <i class="fab fa-whatsapp me-2"></i><span data-en="Book via WhatsApp" data-gu="​​WhatsApp ​​par Book">Book via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span data-en="© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat." data-gu="​​© 2025 Mahek Beauty Parlour. All rights reserved.">© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== WHATSAPP FLOAT ==================== -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip" data-en="Chat with us!" data-gu="​​Chat with us!">Chat with us!</div>
+  <a href="https://wa.me/919876543210?text=Hi!%20I%20want%20to%20inquire%20about%20your%20services." target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery" />
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#000;border:none;border-radius:16px;overflow:hidden">
+      <div class="modal-header" style="border:none;padding:10px 16px">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="stopVideo()"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div style="position:relative;padding-bottom:56.25%">
+          <iframe id="videoFrame" src="" style="position:absolute;inset:0;width:100%;height:100%;border:none" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="custom-toast" id="customToast">
+  <div class="toast-icon check-anim"><i class="fas fa-check"></i></div>
+  <div class="toast-text">
+    <div class="toast-title" data-en="Appointment Sent! 🎉" data-gu="​​Appointment Sent! 🎉">Appointment Sent! 🎉</div>
+    <div class="toast-msg" data-en="We'll confirm via WhatsApp/Call within 1 hour." data-gu="​​We'll confirm within 1 hour.">We'll confirm via WhatsApp/Call within 1 hour.</div>
+  </div>
+</div>
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+// ==================== INIT ====================
+document.addEventListener('DOMContentLoaded', () => {
+  AOS.init({ duration: 700, easing: 'ease-out-cubic', once: true, offset: 60 });
+  initHeroSwiper();
+  initReviewSwiper();
+  initScrollEvents();
+  initCounters();
+  setMinDate();
+});
+
+// ==================== HERO SWIPER ====================
+function initHeroSwiper() {
+  new Swiper('.hero-swiper', {
+    loop: true, speed: 900,
+    autoplay: { delay: 5500, disableOnInteraction: false },
+    pagination: { el: '.hero-swiper .swiper-pagination', clickable: true },
+    navigation: { prevEl: '.hero-swiper .swiper-button-prev', nextEl: '.hero-swiper .swiper-button-next' },
+    effect: 'fade', fadeEffect: { crossFade: true }
+  });
+}
+
+// ==================== REVIEW SWIPER ====================
+function initReviewSwiper() {
+  new Swiper('.review-swiper', {
+    loop: true, speed: 700,
+    autoplay: { delay: 4200, disableOnInteraction: false },
+    slidesPerView: 1, spaceBetween: 24,
+    breakpoints: { 768: { slidesPerView: 2 }, 1024: { slidesPerView: 3 } },
+    pagination: { el: '.review-swiper .swiper-pagination', clickable: true }
+  });
+}
+
+// ==================== SCROLL EVENTS ====================
+function initScrollEvents() {
+  const nav = document.getElementById('mainNav');
+  const scrollBtn = document.getElementById('scrollTop');
+  window.addEventListener('scroll', () => {
+    const s = window.scrollY;
+    nav.classList.toggle('scrolled', s > 80);
+    scrollBtn.classList.toggle('show', s > 400);
+    updateActiveNav(s);
+  });
+}
+
+function updateActiveNav(scrollY) {
+  const sections = ['home','about','services','gallery','outfits','reviews','faq','appointment'];
+  sections.forEach(id => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const top = el.offsetTop - 120;
+    const bot = top + el.offsetHeight;
+    const links = document.querySelectorAll(`.nav-link-custom[href="#${id}"]`);
+    links.forEach(l => l.classList.toggle('active', scrollY >= top && scrollY < bot));
+  });
+}
+
+// ==================== NAV TOGGLE ====================
+function toggleNav() {
+  const mn = document.getElementById('mobileNav');
+  const ic = document.getElementById('navIcon');
+  const open = mn.style.display === 'block';
+  mn.style.display = open ? 'none' : 'block';
+  ic.className = open ? 'fas fa-bars' : 'fas fa-times';
+  ic.style.color = 'var(--rose)'; ic.style.fontSize = '1.3rem';
+}
+function closeNav() {
+  document.getElementById('mobileNav').style.display = 'none';
+  document.getElementById('navIcon').className = 'fas fa-bars';
+}
+
+// ==================== COUNTERS ====================
+function initCounters() {
+  const counters = document.querySelectorAll('.counter');
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCounter(entry.target);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+  counters.forEach(c => observer.observe(c));
+}
+
+function animateCounter(el) {
+  const target = parseInt(el.dataset.target);
+  const duration = 1800;
+  const step = target / (duration / 16);
+  let current = 0;
+  const timer = setInterval(() => {
+    current = Math.min(current + step, target);
+    el.textContent = Math.floor(current);
+    if (current >= target) clearInterval(timer);
+  }, 16);
+}
+
+// ==================== LIGHTBOX ====================
+function openLightbox(src) {
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
+
+// ==================== VIDEO ====================
+function playVideo(url) {
+  document.getElementById('videoFrame').src = url;
+  new bootstrap.Modal(document.getElementById('videoModal')).show();
+}
+function stopVideo() {
+  document.getElementById('videoFrame').src = '';
+}
+document.getElementById('videoModal').addEventListener('hidden.bs.modal', stopVideo);
+
+// ==================== APPOINTMENT ====================
+function setMinDate() {
+  const d = new Date();
+  d.setDate(d.getDate() + 1);
+  const min = d.toISOString().split('T')[0];
+  const apptDate = document.getElementById('apptDate');
+  if (apptDate) apptDate.min = min;
+}
+
+function submitAppointment() {
+  const name = document.getElementById('apptName').value.trim();
+  const phone = document.getElementById('apptPhone').value.trim();
+  const service = document.getElementById('apptService').value;
+  const date = document.getElementById('apptDate').value;
+
+  if (!name || !phone || !service || !date) {
+    alert('Please fill all required fields (Name, Phone, Service, Date).');
+    return;
+  }
+
+  const time = document.getElementById('apptTime').value;
+  const home = document.getElementById('apptHome').value;
+  const note = document.getElementById('apptNote').value;
+
+  // Build WhatsApp message
+  const msg = `🌸 *Appointment Request – Mahek Beauty Parlour*\n\n👤 Name: ${name}\n📞 Phone: ${phone}\n💄 Service: ${service}\n📅 Date: ${date}\n⏰ Time: ${time}\n🏡 Home Service: ${home === 'yes' ? 'Yes' : 'No'}\n📝 Notes: ${note || 'None'}`;
+
+  const waUrl = `https://wa.me/919876543210?text=${encodeURIComponent(msg)}`;
+  window.open(waUrl, '_blank');
+
+  // Show toast
+  showToast();
+
+  // Reset form
+  ['apptName','apptPhone','apptNote'].forEach(id => document.getElementById(id).value = '');
+  document.getElementById('apptService').selectedIndex = 0;
+}
+
+function showToast() {
+  const t = document.getElementById('customToast');
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 4200);
+}
+
+// ==================== LANGUAGE SWITCHER ====================
+let currentLang = 'en';
+
+function switchLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang;
+
+  // Update all elements with data-en / data-gu
+  document.querySelectorAll('[data-en]').forEach(el => {
+    const val = el.getAttribute(`data-${lang}`);
+    if (val) {
+      // Check if it contains HTML (innerHTML)
+      if (val.includes('<') || val.includes('&')) {
+        el.innerHTML = val;
+      } else {
+        el.textContent = val;
+      }
+    }
+  });
+
+  // Update lang buttons
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.textContent.toLowerCase().trim() === lang || (lang === 'gu' && btn.textContent.includes('ગુ')));
+  });
+
+  // Add Gujarati font if needed
+  if (lang === 'gu' && !document.getElementById('guFont')) {
+    const link = document.createElement('link');
+    link.id = 'guFont';
+    link.rel = 'stylesheet';
+    link.href = 'https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@300;400;500;600;700&display=swap';
+    document.head.appendChild(link);
+  }
+}
+
+// ==================== SMOOTH SCROLL ====================
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  });
+});
+</script>
+</body>
+</html>
