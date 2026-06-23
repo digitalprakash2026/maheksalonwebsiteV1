@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Mahek Beauty Parlour – Bhanvad City, Gujarat. Expert Bridal Makeup, Nail Art, Hair Styling, Facial, Wax, Designer Chaniyacholi & Wedding Outfits. Book your appointment today!" />
+  <meta name="keywords" content="beauty parlour bhanvad, bridal makeup gujarat, nail art bhanvad, hair styling, facial, wax, chaniyacholi, wedding outfit, Mahek Beauty Parlour, Dharmishtha Piprotar" />
+  <meta name="author" content="Mahek Beauty Parlour" />
+  <meta property="og:title" content="Mahek Beauty Parlour – Bhanvad, Gujarat" />
+  <meta property="og:description" content="Premium Beauty Services & Designer Chaniyacholi in Bhanvad, Gujarat" />
+  <meta property="og:type" content="website" />
+  <title>About Us | Mahek Beauty Parlour</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<!-- ==================== TOPBAR ==================== -->
+<div class="topbar d-none d-md-block">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-0">
+        <i class="fas fa-phone-alt me-2" style="color:var(--gold-light)"></i>
+        <a href="tel:+918200751953">+91 8200751953</a>
+        <span class="divider">|</span>
+        <i class="fas fa-map-marker-alt me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Opposite Taluka Panchayat, Ranjitpara, Bhanvad" data-gu="રણજિતપરા, ભાણવડ">Opposite Taluka Panchayat, Ranjitpara, Bhanvad</span>
+        <span class="divider">|</span>
+        <i class="fas fa-clock me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Mon–Sat: 9AM – 8PM" data-gu="સોમ–શનિ: સવારે ૯ – સાંજે ૮">Mon–Sat: 9AM – 8PM</span>
+      </div>
+      <div class="lang-switch">
+        <span style="color:rgba(255,255,255,0.5);font-size:0.75rem;margin-right:4px">
+          <i class="fas fa-globe me-1"></i>
+        </span>
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar-custom" id="mainNav">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <a href="index.html" class="navbar-brand-wrap">
+        <div class="brand-logo-circle">🌸</div>
+        <div>
+          <div class="brand-text-main" data-en="Mahek Beauty Parlour" data-gu="મહેક બ્યૂટી પાર્લર">Mahek Beauty Parlour</div>
+          <div class="brand-text-sub" data-en="Premium Beauty & Bridal" data-gu="પ્રીમિયમ બ્યૂટી & બ્રાઇડલ">Premium Beauty & Bridal</div>
+        </div>
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" onclick="toggleNav()">
+        <i class="fas fa-bars" id="navIcon" style="color:var(--rose);font-size:1.3rem"></i>
+      </button>
+      <div class="d-none d-lg-flex align-items-center gap-1" id="navLinks">
+        <a href="index.html" class="nav-link-custom" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="about.html" class="nav-link-custom" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="services.html" class="nav-link-custom" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="gallery.html" class="nav-link-custom" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="outfits.html" class="nav-link-custom" data-en="Designer Chaniyacholi" data-gu="ડિઝાઇનર ચણિયાચોળી" >Designer Chaniyacholi</a>
+        <a href="reviews.html" class="nav-link-custom" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="faq.html" class="nav-link-custom" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="appointment.html" class="btn-rose ms-2" style="padding:10px 22px;border-radius:50px;font-size:0.84rem;font-weight:600" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+      </div>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobileNav" style="display:none;padding-top:16px;padding-bottom:8px;border-top:1px solid var(--border);margin-top:14px">
+      <div class="d-flex flex-column gap-1">
+        <a href="index.html" class="nav-link-custom" onclick="closeNav()" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="about.html" class="nav-link-custom" onclick="closeNav()" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="services.html" class="nav-link-custom" onclick="closeNav()" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="gallery.html" class="nav-link-custom" onclick="closeNav()" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="outfits.html" class="nav-link-custom" onclick="closeNav()" data-en="Designer Chaniyacholi" data-gu="ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</a>
+        <a href="reviews.html" class="nav-link-custom" onclick="closeNav()" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="faq.html" class="nav-link-custom" onclick="closeNav()" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="appointment.html" class="btn-rose text-center mt-2" onclick="closeNav()" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+        <div class="d-flex gap-2 mt-2">
+          <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+          <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" class="section-pad">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-5" data-aos="fade-right">
+        <div class="about-img-wrap">
+          <div class="about-decor-dot"></div>
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Mahek Beauty Parlour Interior" loading="lazy" />
+          </div>
+          <div class="about-badge-float">
+            <div class="num counter" data-target="5">0</div>
+            <div class="lbl" data-en="Years of Excellence" data-gu="ઉત્કૃષ્ટ વર્ષ">Years of Excellence</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7" data-aos="fade-left">
+        <div class="section-tag"><span class="gold-line"></span> <span data-en="About Us" data-gu="અમારા વિશે">About Us</span></div>
+        <h2 class="section-title" data-en="Bhanvad's Most Trusted <span style='color:var(--rose)'>Beauty Destination</span>" data-gu="ભાણવડ્નું સૌથી વિશ્વસ્ત <span style='color:var(--rose)'>બ્યૂટી ઠેકાણું</span>">
+          Bhanvad's Most Trusted <span style="color:var(--rose)">Beauty Destination</span>
+        </h2>
+        <p class="mb-20" data-en="Welcome to Mahek Beauty Parlour — where tradition meets modern elegance. Founded by Dharmishtha Piprotar, we have been transforming brides and beauty lovers in Bhanvad City for over 5 years." data-gu="મહેક બ્યૂટી પાર્લરમાં આપનું સ્વાગત છે — જ્યાં પ્રસ્ !!ity meets modern elegance. ધર્મિષ્ઠા પ‍ipo ⁠tratar દ્વારા સ્થાપિત, અમે ૫ વર્ષ以上 ભ!ware !City !!ity !ity !!ity !ity !!.">
+          Welcome to Mahek Beauty Parlour — where tradition meets modern elegance. Founded by <strong>Dharmishtha Piprotar</strong>, we have been transforming brides and beauty lovers in Bhanvad City for over 5 years. Our parlour is a sanctuary of beauty, where every client is treated like a queen.
+        </p>
+        <ul class="about-list list-unstyled mt-4">
+          <li><i class="fas fa-check-circle"></i> <span data-en="Expert bridal & party makeup by certified artists" data-gu="પ્રમાણિત કલાકારો દ્વારા નિષ્ણાત બ્રાઇડલ & પાર્ટી મેકઅプ">Expert bridal & party makeup by certified artists</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Premium branded products — skin-safe & long-lasting" data-gu="ઉચ્ચ-ગ્રેડ ઉत्पادों — ਚਮੜੀ-ਸੁਰੱਖਿਅਤ & ਲੰਬੇ ਸਮੇਂ ਤੱਕ ਚੱਲਣ ਵਾਲੇ">Premium branded products — skin-safe & long-lasting</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Designer Chaniyacholi & wedding outfits on rent & sale" data-gu="ભાઝ & ​​વéch ​​ wedding outfits ભâ­ô !ity & ​​s​​ale">Designer Chaniyacholi & wedding outfits on rent & sale</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Hygienic, welcoming & fully air-conditioned salon" data-gu="​​H​​ygienic ​​welcoming​​ & ​​fully​​ ​​A​​ir-cond ​​salé">Hygienic, welcoming & fully air-conditioned salon</span></li>
+          <li><i class="fas fa-check-circle"></i> <span data-en="Home service available on request" data-gu="ઘ​​ré ​​service ​​availë​ ​​on​ ​​req​​.">Home service available on request</span></li>
+        </ul>
+        <div class="owner-chip">
+          <div class="owner-av">👩</div>
+          <div>
+            <div class="owner-name">Dharmishtha Piprotar</div>
+            <div class="owner-role" data-en="Founder & Lead Beauty Artist" data-gu="સ્થાપક & મુખ્ય બ્યૂટી આर्टिস्ट">Founder & Lead Beauty Artist</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== STATS ==================== -->
+<section class="stats-section section-pad-sm">
+  <div class="container">
+    <div class="row g-0">
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="1200">0</span>+</div>
+          <div class="stat-label" data-en="Happy Clients" data-gu="ખુşh ​​Clients">Happy Clients</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="350">0</span>+</div>
+          <div class="stat-label" data-en="Bridal Makeovers" data-gu="​​Bridal Makeovers">Bridal Makeovers</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="5">0</span>+</div>
+          <div class="stat-label" data-en="Years Experience" data-gu="​​Years Exp.">Years Experience</div>
+        </div>
+      </div>
+      <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="stat-item">
+          <div class="stat-num"><span class="counter" data-target="100">0</span>%</div>
+          <div class="stat-label" data-en="Client Satisfaction" data-gu="​​Client Satisfaction">Client Satisfaction</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== USP ==================== -->
+<section class="usp-section section-pad">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center" style="color:var(--gold-light)"><span style="display:inline-block;width:60px;height:2px;background:var(--gold-light)"></span> <span data-en="Why Choose Us" data-gu="​​Why Choose Us">Why Choose Us</span></div>
+      <h2 class="section-title" style="color:white" data-en="The Mahek <span style='color:var(--gold-light)'>Difference</span>" data-gu="​​Mahek <span style='color:var(--gold-light)'>Difference</span>">
+        The Mahek <span style="color:var(--gold-light)">Difference</span>
+      </h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
+        <div class="usp-card">
+          <div class="usp-icon-3d">🏆</div>
+          <h5 data-en="5+ Years of Expertise" data-gu="​​5+ Years of Expertise">5+ Years of Expertise</h5>
+          <p data-en="Decades of combined experience by our master artists. We've perfected the craft." data-gu="​​Decades of combined experience.">Decades of combined experience by our master artists. We've perfected the craft.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="usp-card">
+          <div class="usp-icon-3d">💎</div>
+          <h5 data-en="Premium Products Only" data-gu="​​Premium Products Only">Premium Products Only</h5>
+          <p data-en="We use only branded, dermatologically-tested products safe for all skin types including sensitive skin." data-gu="​​We use only branded products.">We use only branded, dermatologically-tested products safe for all skin types.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+        <div class="usp-card">
+          <div class="usp-icon-3d">🤍</div>
+          <h5 data-en="Hygienic & Safe" data-gu="​​Hygienic & Safe">Hygienic & Safe</h5>
+          <p data-en="Fully sanitised tools, single-use applicators & a clean, welcoming environment every day." data-gu="​​Fully sanitised tools & clean environment.">Fully sanitised tools, single-use applicators & a clean, welcoming environment every day.</p>
+        </div>
+      </div>
+      <div class="col-sm-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+        <div class="usp-card">
+          <div class="usp-icon-3d">🏡</div>
+          <h5 data-en="Home Service Available" data-gu="​​Home Service Available">Home Service Available</h5>
+          <p data-en="Can't visit? We come to you! Home beauty services available for brides & special events." data-gu="​​Home beauty services available.">Can't visit? We come to you! Home beauty services available for brides & special events.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="brand-logo-circle" style="width:48px;height:48px;font-size:1.2rem">🌸</div>
+          <div>
+            <div class="brand-text-main" style="color:white">Mahek Beauty Parlour</div>
+            <div class="brand-text-sub" style="color:var(--gold-light)">Premium Beauty & Bridal</div>
+          </div>
+        </div>
+        <p class="footer-desc" data-en="Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day." data-gu="​​Your premium beauty destination in Bhanvad.">Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918200751953" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Quick Links" data-gu="​​Quick Links">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i><span data-en="Home" data-gu="​​Home">Home</span></a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i><span data-en="About Us" data-gu="​​About Us">About Us</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Services" data-gu="​​Services">Services</span></a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i><span data-en="Gallery" data-gu="​​Gallery">Gallery</span></a></li>
+          <li><a href="outfits.html"><i class="fas fa-chevron-right"></i><span data-en="Designer Chaniyacholi" data-gu="​​ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</span></a></li>
+          <li><a href="reviews.html"><i class="fas fa-chevron-right"></i><span data-en="Reviews" data-gu="​​Reviews">Reviews</span></a></li>
+          <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+          <li><a href="appointment.html"><i class="fas fa-chevron-right"></i><span data-en="Book Now" data-gu="​​Book Now">Book Now</span></a></li>
+        </ul>
+      </div>
+      <!-- Services -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Services" data-gu="​​Services">Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Nail Art" data-gu="​​Nail Art">Nail Art</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Hair Straightening" data-gu="​​Hair Straightening">Hair Straightening</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Facial" data-gu="​​Facial">Facial</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Shinar" data-gu="​​Shinar">Shinar</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Waxing" data-gu="​​Waxing">Waxing</span></a></li>
+          <li><a href="outfits.html"><i class="fas fa-chevron-right"></i><span data-en="Designer Chaniyacholi" data-gu="​​ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</span></a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-6">
+        <h6 data-en="Contact Us" data-gu="​​Contact Us">Contact Us</h6>
+        <ul class="footer-contact list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-en="Mahek Beauty Parlour, Opposite Taluka Panchayat, Near Sagar Kanya Chhatralay,<br>Ranjitpara, Bhanvad" data-gu="​​Ranjitpara, Bhanvad">Mahek Beauty Parlour, Opposite Taluka Panchayat, Near Sagar Kanya Chhatralay,<br>Ranjitpara, Bhanvad</span>
+          </li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+918200751953" style="color:rgba(255,255,255,0.6)">+91 8200751953</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918200751953" style="color:rgba(255,255,255,0.6)">WhatsApp Us</a></li>
+          <li><i class="fas fa-clock"></i> <span data-en="Mon–Sat: 9AM–8PM | Sun: 10AM–6PM" data-gu="​​Mon–Sat: 9–8 | Sun: 10–6">Mon–Sat: 9AM–8PM | Sun: 10AM–6PM</span></li>
+        </ul>
+        <a href="https://wa.me/918200751953?text=Hi!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-gold" style="padding:11px 28px;font-size:0.86rem">
+          <i class="fab fa-whatsapp me-2"></i><span data-en="Book via WhatsApp" data-gu="​​WhatsApp ​​par Book">Book via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span data-en="© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat." data-gu="​​© 2025 Mahek Beauty Parlour. All rights reserved.">© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== WHATSAPP FLOAT ==================== -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip" data-en="Chat with us!" data-gu="​​Chat with us!">Chat with us!</div>
+  <a href="https://wa.me/918200751953?text=Hi!%20I%20want%20to%20inquire%20about%20your%20services." target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery" />
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#000;border:none;border-radius:16px;overflow:hidden">
+      <div class="modal-header" style="border:none;padding:10px 16px">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="stopVideo()"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div style="position:relative;padding-bottom:56.25%">
+          <iframe id="videoFrame" src="" style="position:absolute;inset:0;width:100%;height:100%;border:none" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="custom-toast" id="customToast">
+  <div class="toast-icon check-anim"><i class="fas fa-check"></i></div>
+  <div class="toast-text">
+    <div class="toast-title" data-en="Appointment Sent! 🎉" data-gu="​​Appointment Sent! 🎉">Appointment Sent! 🎉</div>
+    <div class="toast-msg" data-en="We'll confirm via WhatsApp/Call within 1 hour." data-gu="​​We'll confirm within 1 hour.">We'll confirm via WhatsApp/Call within 1 hour.</div>
+  </div>
+</div>
+
+
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

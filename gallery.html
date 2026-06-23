@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Mahek Beauty Parlour – Bhanvad City, Gujarat. Expert Bridal Makeup, Nail Art, Hair Styling, Facial, Wax, Designer Chaniyacholi & Wedding Outfits. Book your appointment today!" />
+  <meta name="keywords" content="beauty parlour bhanvad, bridal makeup gujarat, nail art bhanvad, hair styling, facial, wax, chaniyacholi, wedding outfit, Mahek Beauty Parlour, Dharmishtha Piprotar" />
+  <meta name="author" content="Mahek Beauty Parlour" />
+  <meta property="og:title" content="Mahek Beauty Parlour – Bhanvad, Gujarat" />
+  <meta property="og:description" content="Premium Beauty Services & Designer Chaniyacholi in Bhanvad, Gujarat" />
+  <meta property="og:type" content="website" />
+  <title>Gallery | Mahek Beauty Parlour</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <!-- AOS Animation -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet" />
+  <!-- Swiper -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+<body>
+<!-- ==================== TOPBAR ==================== -->
+<div class="topbar d-none d-md-block">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+      <div class="d-flex align-items-center gap-0">
+        <i class="fas fa-phone-alt me-2" style="color:var(--gold-light)"></i>
+        <a href="tel:+918200751953">+91 8200751953</a>
+        <span class="divider">|</span>
+        <i class="fas fa-map-marker-alt me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Opposite Taluka Panchayat, Ranjitpara, Bhanvad" data-gu="રણજિતપરા, ભાણવડ">Opposite Taluka Panchayat, Ranjitpara, Bhanvad</span>
+        <span class="divider">|</span>
+        <i class="fas fa-clock me-2" style="color:var(--gold-light)"></i>
+        <span data-en="Mon–Sat: 9AM – 8PM" data-gu="સોમ–શનિ: સવારે ૯ – સાંજે ૮">Mon–Sat: 9AM – 8PM</span>
+      </div>
+      <div class="lang-switch">
+        <span style="color:rgba(255,255,255,0.5);font-size:0.75rem;margin-right:4px">
+          <i class="fas fa-globe me-1"></i>
+        </span>
+        <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+        <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav class="navbar-custom" id="mainNav">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between w-100">
+      <a href="index.html" class="navbar-brand-wrap">
+        <div class="brand-logo-circle">🌸</div>
+        <div>
+          <div class="brand-text-main" data-en="Mahek Beauty Parlour" data-gu="મહેક બ્યૂટી પાર્લર">Mahek Beauty Parlour</div>
+          <div class="brand-text-sub" data-en="Premium Beauty & Bridal" data-gu="પ્રીમિયમ બ્યૂટી & બ્રાઇડલ">Premium Beauty & Bridal</div>
+        </div>
+      </a>
+      <button class="navbar-toggler d-lg-none" type="button" onclick="toggleNav()">
+        <i class="fas fa-bars" id="navIcon" style="color:var(--rose);font-size:1.3rem"></i>
+      </button>
+      <div class="d-none d-lg-flex align-items-center gap-1" id="navLinks">
+        <a href="index.html" class="nav-link-custom" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="about.html" class="nav-link-custom" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="services.html" class="nav-link-custom" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="gallery.html" class="nav-link-custom" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="outfits.html" class="nav-link-custom" data-en="Designer Chaniyacholi" data-gu="ડિઝાઇનર ચણિયાચોળી" >Designer Chaniyacholi</a>
+        <a href="reviews.html" class="nav-link-custom" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="faq.html" class="nav-link-custom" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="appointment.html" class="btn-rose ms-2" style="padding:10px 22px;border-radius:50px;font-size:0.84rem;font-weight:600" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+      </div>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobileNav" style="display:none;padding-top:16px;padding-bottom:8px;border-top:1px solid var(--border);margin-top:14px">
+      <div class="d-flex flex-column gap-1">
+        <a href="index.html" class="nav-link-custom" onclick="closeNav()" data-en="Home" data-gu="હોમ">Home</a>
+        <a href="about.html" class="nav-link-custom" onclick="closeNav()" data-en="About" data-gu="અમારા વિશે">About</a>
+        <a href="services.html" class="nav-link-custom" onclick="closeNav()" data-en="Services" data-gu="સેવાઓ">Services</a>
+        <a href="gallery.html" class="nav-link-custom" onclick="closeNav()" data-en="Gallery" data-gu="ગેલેરી">Gallery</a>
+        <a href="outfits.html" class="nav-link-custom" onclick="closeNav()" data-en="Designer Chaniyacholi" data-gu="ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</a>
+        <a href="reviews.html" class="nav-link-custom" onclick="closeNav()" data-en="Reviews" data-gu="સમીક્ષા">Reviews</a>
+        <a href="faq.html" class="nav-link-custom" onclick="closeNav()" data-en="FAQ" data-gu="FAQ">FAQ</a>
+        <a href="appointment.html" class="btn-rose text-center mt-2" onclick="closeNav()" data-en="Book Appointment" data-gu="એપોઇન્ટમેન્ટ">Book Appointment</a>
+        <div class="d-flex gap-2 mt-2">
+          <button class="lang-btn active" onclick="switchLang('en')">EN</button>
+          <button class="lang-btn" onclick="switchLang('gu')">ગુ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- ==================== GALLERY / BRIDAL ==================== -->
+<section id="gallery" class="section-pad bg-blush">
+  <div class="container">
+    <div class="text-center mb-60" data-aos="fade-up">
+      <div class="section-tag justify-content-center"><span class="gold-line"></span> <span data-en="Bridal Gallery" data-gu="​​Bridal Gallery">Bridal Gallery</span></div>
+      <h2 class="section-title" data-en="Our <span style='color:var(--rose)'>Beautiful</span> Work" data-gu="​​Our <span style='color:var(--rose)'>Beautiful</span> Work">
+        Our <span style="color:var(--rose)">Beautiful</span> Work
+      </h2>
+      <p class="section-subtitle mx-auto" data-en="Real transformations, real brides — see the magic we create at Mahek Beauty Parlour." data-gu="​​Real transformations, real brides.">Real transformations, real brides — see the magic we create at Mahek Beauty Parlour.</p>
+    </div>
+
+    <div class="gallery-grid" data-aos="fade-up">
+      <div class="gallery-item tall" onclick="openLightbox('https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1609357605129-26f69add5d6e?w=600&q=75" alt="Bridal Makeup 1" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1585418959375-0394edddbabc?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1585418959375-0394edddbabc?w=600&q=75" alt="Nail Art" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Nail Art" data-gu="​​Nail Art">Nail Art</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1562322140-8baeececf3df?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=600&q=75" alt="Hair Styling" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1571290274554-6a2eaa771e5f?w=600&q=75" alt="Bridal Look 2" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Bridal Look" data-gu="​​Bridal Look">Bridal Look</span></div>
+      </div>
+      <div class="gallery-item" onclick="openLightbox('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80')">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=75" alt="Makeup Close-up" loading="lazy" />
+        <div class="gallery-overlay"><span data-en="Facial Glow" data-gu="​​Facial Glow">Facial Glow</span></div>
+      </div>
+    </div>
+
+    <!-- Video Section -->
+    <div class="mt-5">
+      <h4 class="text-center mb-4" data-en="✨ Watch Our Work" data-gu="​​Watch Our Work">✨ Watch Our Work</h4>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <div class="video-card" onclick="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+            <img class="video-thumb" src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&q=70" alt="Video 1" loading="lazy" />
+            <div class="video-play-btn"><div class="play-circle"><i class="fas fa-play"></i></div></div>
+          </div>
+          <p class="text-center mt-2 fw-600" style="font-size:.9rem" data-en="Bridal Makeup Tutorial" data-gu="​​Bridal Makeup Tutorial">Bridal Makeup Tutorial</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="video-card" onclick="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+            <img class="video-thumb" src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&q=70" alt="Video 2" loading="lazy" />
+            <div class="video-play-btn"><div class="play-circle"><i class="fas fa-play"></i></div></div>
+          </div>
+          <p class="text-center mt-2 fw-600" style="font-size:.9rem" data-en="Nail Art Process" data-gu="​​Nail Art Process">Nail Art Process</p>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="video-card" onclick="playVideo('https://www.youtube.com/embed/dQw4w9WgXcQ')">
+            <img class="video-thumb" src="https://images.unsplash.com/photo-1594938298603-c8148c4b4e10?w=600&q=70" alt="Video 3" loading="lazy" />
+            <div class="video-play-btn"><div class="play-circle"><i class="fas fa-play"></i></div></div>
+          </div>
+          <p class="text-center mt-2 fw-600" style="font-size:.9rem" data-en="Hair Transformation" data-gu="​​Hair Transformation">Hair Transformation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Brand -->
+      <div class="col-lg-4 col-md-6">
+        <div class="d-flex align-items-center gap-3 mb-3">
+          <div class="brand-logo-circle" style="width:48px;height:48px;font-size:1.2rem">🌸</div>
+          <div>
+            <div class="brand-text-main" style="color:white">Mahek Beauty Parlour</div>
+            <div class="brand-text-sub" style="color:var(--gold-light)">Premium Beauty & Bridal</div>
+          </div>
+        </div>
+        <p class="footer-desc" data-en="Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day." data-gu="​​Your premium beauty destination in Bhanvad.">Your premium beauty destination in Bhanvad City, Gujarat. Expert bridal makeup, nail art, hair care & designer outfits for your perfect day.</p>
+        <div class="social-icons">
+          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/918200751953" class="social-icon" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Quick Links" data-gu="​​Quick Links">Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="index.html"><i class="fas fa-chevron-right"></i><span data-en="Home" data-gu="​​Home">Home</span></a></li>
+          <li><a href="about.html"><i class="fas fa-chevron-right"></i><span data-en="About Us" data-gu="​​About Us">About Us</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Services" data-gu="​​Services">Services</span></a></li>
+          <li><a href="gallery.html"><i class="fas fa-chevron-right"></i><span data-en="Gallery" data-gu="​​Gallery">Gallery</span></a></li>
+          <li><a href="outfits.html"><i class="fas fa-chevron-right"></i><span data-en="Designer Chaniyacholi" data-gu="​​ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</span></a></li>
+          <li><a href="reviews.html"><i class="fas fa-chevron-right"></i><span data-en="Reviews" data-gu="​​Reviews">Reviews</span></a></li>
+          <li><a href="faq.html"><i class="fas fa-chevron-right"></i>FAQ</a></li>
+          <li><a href="appointment.html"><i class="fas fa-chevron-right"></i><span data-en="Book Now" data-gu="​​Book Now">Book Now</span></a></li>
+        </ul>
+      </div>
+      <!-- Services -->
+      <div class="col-lg-2 col-sm-6">
+        <h6 data-en="Services" data-gu="​​Services">Services</h6>
+        <ul class="footer-links">
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Bridal Makeup" data-gu="​​Bridal Makeup">Bridal Makeup</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Nail Art" data-gu="​​Nail Art">Nail Art</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Hair Styling" data-gu="​​Hair Styling">Hair Styling</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Hair Straightening" data-gu="​​Hair Straightening">Hair Straightening</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Facial" data-gu="​​Facial">Facial</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Shinar" data-gu="​​Shinar">Shinar</span></a></li>
+          <li><a href="services.html"><i class="fas fa-chevron-right"></i><span data-en="Waxing" data-gu="​​Waxing">Waxing</span></a></li>
+          <li><a href="outfits.html"><i class="fas fa-chevron-right"></i><span data-en="Designer Chaniyacholi" data-gu="​​ડિઝાઇનર ચણિયાચોળી">Designer Chaniyacholi</span></a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-lg-4 col-md-6">
+        <h6 data-en="Contact Us" data-gu="​​Contact Us">Contact Us</h6>
+        <ul class="footer-contact list-unstyled">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <span data-en="Mahek Beauty Parlour, Opposite Taluka Panchayat, Near Sagar Kanya Chhatralay,<br>Ranjitpara, Bhanvad" data-gu="​​Ranjitpara, Bhanvad">Mahek Beauty Parlour, Opposite Taluka Panchayat, Near Sagar Kanya Chhatralay,<br>Ranjitpara, Bhanvad</span>
+          </li>
+          <li><i class="fas fa-phone-alt"></i> <a href="tel:+918200751953" style="color:rgba(255,255,255,0.6)">+91 8200751953</a></li>
+          <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/918200751953" style="color:rgba(255,255,255,0.6)">WhatsApp Us</a></li>
+          <li><i class="fas fa-clock"></i> <span data-en="Mon–Sat: 9AM–8PM | Sun: 10AM–6PM" data-gu="​​Mon–Sat: 9–8 | Sun: 10–6">Mon–Sat: 9AM–8PM | Sun: 10AM–6PM</span></li>
+        </ul>
+        <a href="https://wa.me/918200751953?text=Hi!%20I%20want%20to%20book%20an%20appointment." target="_blank" class="btn-gold" style="padding:11px 28px;font-size:0.86rem">
+          <i class="fab fa-whatsapp me-2"></i><span data-en="Book via WhatsApp" data-gu="​​WhatsApp ​​par Book">Book via WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <span data-en="© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat." data-gu="​​© 2025 Mahek Beauty Parlour. All rights reserved.">© 2025 Mahek Beauty Parlour. All rights reserved. | Designed with ❤️ for Dharmishtha Piprotar, Bhanvad, Gujarat.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==================== WHATSAPP FLOAT ==================== -->
+<div class="whatsapp-float">
+  <div class="whatsapp-tooltip" data-en="Chat with us!" data-gu="​​Chat with us!">Chat with us!</div>
+  <a href="https://wa.me/918200751953?text=Hi!%20I%20want%20to%20inquire%20about%20your%20services." target="_blank" class="whatsapp-btn" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Scroll to top -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Scroll to top">
+  <i class="fas fa-chevron-up"></i>
+</button>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close" onclick="closeLightbox()"><i class="fas fa-times"></i></button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Gallery" />
+</div>
+
+<!-- Video Modal -->
+<div class="modal fade" id="videoModal" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content" style="background:#000;border:none;border-radius:16px;overflow:hidden">
+      <div class="modal-header" style="border:none;padding:10px 16px">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" onclick="stopVideo()"></button>
+      </div>
+      <div class="modal-body p-0">
+        <div style="position:relative;padding-bottom:56.25%">
+          <iframe id="videoFrame" src="" style="position:absolute;inset:0;width:100%;height:100%;border:none" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div class="custom-toast" id="customToast">
+  <div class="toast-icon check-anim"><i class="fas fa-check"></i></div>
+  <div class="toast-text">
+    <div class="toast-title" data-en="Appointment Sent! 🎉" data-gu="​​Appointment Sent! 🎉">Appointment Sent! 🎉</div>
+    <div class="toast-msg" data-en="We'll confirm via WhatsApp/Call within 1 hour." data-gu="​​We'll confirm within 1 hour.">We'll confirm via WhatsApp/Call within 1 hour.</div>
+  </div>
+</div>
+
+
+
+<!-- ==================== SCRIPTS ==================== -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
